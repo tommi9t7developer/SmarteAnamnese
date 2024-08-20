@@ -7,8 +7,12 @@
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\mainpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\anamneseselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\anamneseselectpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,12 +23,28 @@
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\anamneseselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\anamneseselectpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\anamneseselectpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\anamneseselectpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -42,7 +62,137 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnamneseSelectPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPage.xaml",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\AnamneseSelectPage.xaml",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPage.xaml",
+              "RelativeToolTip": "SmarteAnamnese\\AnamneseSelectPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T17:50:05.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml",
+              "RelativeToolTip": "SmarteAnamnese\\MainPage.xaml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-05T17:06:28.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPageViewModel.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\MainPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPageViewModel.cs",
+              "RelativeToolTip": "SmarteAnamnese\\MainPageViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswDAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T05:27:55.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ErkaeltungPage.xaml",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPage.xaml",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
+              "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPage.xaml",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvw8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-20T05:22:55.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ErkaeltungPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
+              "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T05:29:16.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AppShell.xaml.cs",
+              "RelativeToolTip": "SmarteAnamnese\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T05:24:08.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AnamneseSelectPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPage.xaml.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\AnamneseSelectPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPage.xaml.cs",
+              "RelativeToolTip": "SmarteAnamnese\\AnamneseSelectPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:52:18.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ErkaeltungPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml.cs",
+              "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:52:50.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml.cs",
+              "RelativeToolTip": "SmarteAnamnese\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:52:26.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AnamneseSelectPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPageViewModel.cs",
+              "RelativeDocumentMoniker": "SmarteAnamnese\\AnamneseSelectPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AnamneseSelectPageViewModel.cs",
+              "RelativeToolTip": "SmarteAnamnese\\AnamneseSelectPageViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:51:27.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ErkaeltungModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungModel.cs",
@@ -55,72 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ErkaeltungPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
-              "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPage.xaml",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
-              "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPage.xaml",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvwsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-20T05:22:55.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MainPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPageViewModel.cs",
-              "RelativeDocumentMoniker": "SmarteAnamnese\\MainPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPageViewModel.cs",
-              "RelativeToolTip": "SmarteAnamnese\\MainPageViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T05:27:55.363Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppShell.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AppShell.xaml.cs",
-              "RelativeDocumentMoniker": "SmarteAnamnese\\AppShell.xaml.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\AppShell.xaml.cs",
-              "RelativeToolTip": "SmarteAnamnese\\AppShell.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-18T05:24:08.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ErkaeltungPageViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
-              "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
-              "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABwAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T05:29:16.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml",
-              "RelativeDocumentMoniker": "SmarteAnamnese\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MainPage.xaml",
-              "RelativeToolTip": "SmarteAnamnese\\MainPage.xaml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-07-05T17:06:28.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\App.xaml",
               "RelativeDocumentMoniker": "SmarteAnamnese\\App.xaml",
