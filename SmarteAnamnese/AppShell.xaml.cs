@@ -6,6 +6,7 @@
         {
             InitializeComponent();
             Routing.RegisterRoute(nameof(ErkaeltungPage), typeof(ErkaeltungPage));
+            Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
 
             // Setze die MainPage als Startseite
             Items.Add(new ShellContent

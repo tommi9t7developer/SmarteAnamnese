@@ -5,8 +5,24 @@
              Title="ErkaeltungPage">
     <VerticalStackLayout>
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        Text="Seit wann haben Sie Beschwerden?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Entry 
+        Text="{Binding BeschwerdeZeitraum}" 
+        Placeholder="Geben Sie hier Ihre Antwort ein"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Button 
+        Text="Speichern" 
+        Command="{Binding SaveErkaeltungCommand}" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Button 
+        Text="Zurück zur Hauptseite" 
+        Command="{Binding GoToMainPageCommand}" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
     </VerticalStackLayout>
+    
 </ContentPage>
