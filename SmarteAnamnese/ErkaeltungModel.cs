@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SmarteAnamnese
 {
-    public  class ErkaeltungModel
+    public  class ErkaeltungModel : AnamneseModel
     {
         public string BeschwerdeZeitraum {  get; set; }
         public ErkaeltungModel(string beschwerdenzeitraum) {

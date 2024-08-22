@@ -3,60 +3,39 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SmarteAnamnese.MainPage">
 
-    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto, *" ColumnDefinitions="Auto, *">
-        <!-- Vorname -->
-        <Label 
-          Text="Vorname" 
-          VerticalOptions="Center" 
-          HorizontalOptions="Center" 
-          Grid.Row="0" 
-          Grid.Column="0"/>
-        <Entry 
-          Text="{Binding Vorname}" 
-          Placeholder="Geben Sie hier Ihre Antwort ein"
-          VerticalOptions="Center" 
-          HorizontalOptions="FillAndExpand" 
-          Grid.Row="0" 
-          Grid.Column="1"/>
+    <Grid>
+        <!-- Row Definitions -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-        <!-- Nachname -->
-        <Label 
-           Text="Nachname" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" 
-           Grid.Row="1" 
-           Grid.Column="0"/>
-        <Entry 
-           Text="{Binding Nachname}" 
-           Placeholder="Geben Sie hier Ihre Antwort ein"
-           VerticalOptions="Center" 
-           HorizontalOptions="FillAndExpand" 
-           Grid.Row="1" 
-           Grid.Column="1"/>
-
-        <!-- Geburtsdatum -->
-        <Label 
-           Text="Geburtsdatum" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" 
-           Grid.Row="2" 
-           Grid.Column="0"/>
-        <DatePicker 
-           Date="{Binding Geburtsdatum}" 
-           VerticalOptions="Center"
-           HorizontalOptions="FillAndExpand"
-           Grid.Row="2" 
-           Grid.Column="1"/>
+        <!-- Language Picker -->
+        <Picker
+        Title="Sprache auswählen"
+        Grid.Row="2"
+        Grid.ColumnSpan="2"
+        HorizontalOptions="Fill"
+        VerticalOptions="CenterAndExpand">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Deutsch</x:String>
+                    <x:String>Englisch</x:String>
+                    <x:String>Arabisch</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
 
         <!-- Button -->
         <Button
-            Command="{Binding GoToAnamneseSelectPageCommand}"
-            IsEnabled="{Binding CanExecuteGoToAnamnese}"
-            Text="Zur Anamnese"
-            Grid.Row="3"
-            Grid.ColumnSpan="2"
-            HorizontalOptions="Fill"
-            VerticalOptions="Fill" />
+        Command="{Binding GoToPersonalienPageCommand}"
+        Text="Weiter"
+        Grid.Row="3"
+        Grid.ColumnSpan="2"
+        HorizontalOptions="Fill"
+        VerticalOptions="Fill" />
     </Grid>
 
 
