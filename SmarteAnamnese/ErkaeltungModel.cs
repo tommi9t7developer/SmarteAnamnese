@@ -9,8 +9,6 @@ namespace SmarteAnamnese
     public  class ErkaeltungModel : AnamneseModel
     {
         public string BeschwerdeZeitraum {  get; set; }
-        public ErkaeltungModel(string beschwerdenzeitraum) {
-            BeschwerdeZeitraum = beschwerdenzeitraum;
-        }    
+       
     }
 }

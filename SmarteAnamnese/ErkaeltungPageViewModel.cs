@@ -9,14 +9,22 @@ using CommunityToolkit.Mvvm.Input;
 namespace SmarteAnamnese
 {
     public partial class ErkaeltungPageViewModel : ObservableObject
-    { 
+    {
+        private readonly DataService _dataService;
+        private ErkaeltungModel erkaeltung;
+        public ErkaeltungPageViewModel(DataService dataService)
+        {
+            _dataService = dataService;
+            erkaeltung = new ErkaeltungModel();
+        }
+
         [ObservableProperty]
         string beschwerdeZeitraum;
        
         [RelayCommand]
         public async Task  SaveErkaeltung()
         {
-            ErkaeltungModel erkaeltung = new(beschwerdeZeitraum);
+            erkaeltung.BeschwerdeZeitraum = BeschwerdeZeitraum;
             await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
         }
 

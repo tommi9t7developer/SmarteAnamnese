@@ -32,8 +32,9 @@ namespace SmarteAnamnese
         [RelayCommand(CanExecute = nameof(CanExecuteGoToAnamnese))]
         public async Task GoToAnamneseSelectPage()
         {
-            Patient patient = new Patient(Vorname, Nachname, Geburtsdatum);
-            _dataService.Patient = patient;
+            _dataService.Patient.Vorname = vorname;
+            _dataService.Patient.Nachname = nachname;
+            _dataService.Patient.Geburtsdatum = geburtsdatum;
             // Navigiere zur AnamneseSelectPage
             await Shell.Current.GoToAsync(nameof(AnamneseSelectPage));
         }

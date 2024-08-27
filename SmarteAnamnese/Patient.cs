@@ -8,22 +8,17 @@ namespace SmarteAnamnese
 {
     public class Patient
     {
-        public string Vorname { get; }
-        public string Nachname { get; }
-        public DateTime Geburtsdatum { get; }
+        public string Sprache { get; }
+        public string Vorname { get; set; }
+        public string Nachname { get; set; }
+        public DateTime Geburtsdatum { get; set; }
 
         public AnamneseModel Anamnese { get; set; }
 
-        public Patient(string vorname, string nachname, DateTime geburtsdatum)
+        public Patient(string sprache)
         {
-            Vorname = vorname;
-            Nachname = nachname;
-            Geburtsdatum = geburtsdatum;
-        }
-
-        public void SetzeAnamnese(AnamneseModel anamnese)
-        {
-            Anamnese = anamnese;
+            Sprache = sprache;
+           
         }
     }
 }

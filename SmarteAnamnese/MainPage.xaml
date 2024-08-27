@@ -14,19 +14,13 @@
 
         <!-- Language Picker -->
         <Picker
-        Title="Sprache auswählen"
-        Grid.Row="2"
-        Grid.ColumnSpan="2"
-        HorizontalOptions="Fill"
-        VerticalOptions="CenterAndExpand">
-            <Picker.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Deutsch</x:String>
-                    <x:String>Englisch</x:String>
-                    <x:String>Arabisch</x:String>
-                </x:Array>
-            </Picker.ItemsSource>
-        </Picker>
+            Title="Sprache auswählen"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            HorizontalOptions="Fill"
+            VerticalOptions="CenterAndExpand"
+            ItemsSource="{Binding SprachenListe}" 
+            SelectedItem="{Binding Sprache, Mode=TwoWay}" />
 
         <!-- Button -->
         <Button

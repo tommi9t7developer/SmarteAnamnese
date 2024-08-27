@@ -5,6 +5,6 @@ public partial class AnamneseSelectPage : ContentPage
 	public AnamneseSelectPage()
 	{
 		InitializeComponent();
-		BindingContext = new AnamneseSelectPageViewModel();
+		BindingContext = ServiceHelper.GetService<AnamneseSelectPageViewModel>();
 	}
 }
