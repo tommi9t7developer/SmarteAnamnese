@@ -15,11 +15,11 @@ namespace SmarteAnamnese
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-            /*
             builder.Services.AddSingleton<DataService>();
-            builder.Services.AddTransient<PersonalienPageViewModel>();
-            builder.Services.AddTransient<PersonalienPage>();
-            */
+
+            builder.Services.AddSingleton<MainPageViewModel>();
+            builder.Services.AddSingleton<PersonalienPageViewModel>();
+            builder.Services.AddSingleton<ErkaeltungPageViewModel>();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

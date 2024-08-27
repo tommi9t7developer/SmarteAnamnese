@@ -5,7 +5,7 @@
         public MainPage()
         {
            InitializeComponent();
-           BindingContext = new MainPageViewModel();
+           BindingContext = ServiceHelper.GetService<MainPageViewModel>();
         }
 
     }
