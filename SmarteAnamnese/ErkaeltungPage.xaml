@@ -13,6 +13,398 @@
         Placeholder="Geben Sie hier Ihre Antwort ein"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
+        
+       
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+ Text="Sind die Beschwerden plötzlich aufgetreten?" 
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+            <Button 
+     Text="Ja"
+     BackgroundColor="{Binding PloetzlicherBeginnYesButtonColor}"
+     Command="{Binding PloetzlicherBeginnYesCommand}"
+     WidthRequest="65"
+     Margin="5"/>
+
+            <Button 
+     Text="Nein"
+     BackgroundColor="{Binding PloetzlicherBeginnNoButtonColor}"
+     Command="{Binding PloetzlicherBeginnNoCommand}"
+     WidthRequest="65"
+     Margin="5"/>
+        </StackLayout>
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+ Text="haben Sie Fieber?" 
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+
+            <Button 
+    Text="Ja"
+    BackgroundColor="{Binding FieberYesButtonColor}"
+    Command="{Binding FieberYesCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+
+            <Button 
+    Text="Nein"
+    BackgroundColor="{Binding FieberNoButtonColor}"
+    Command="{Binding FieberNoCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+        Text="Falls Sie ja angekreuzt haben, wie hoch ist Ihr Fieber?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+            <Entry 
+  Text="{Binding FieberHoehe}" 
+  Placeholder="Geben Sie hier Ihre Antwort ein"
+  VerticalOptions="Center" 
+  HorizontalOptions="Center" />
+            <Label 
+Text="°C" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+   Text="haben Sie Nachtschweiß?" 
+   VerticalOptions="Center" 
+   HorizontalOptions="Center" />
+
+
+            <Button 
+    Text="Ja"
+    BackgroundColor="{Binding NachtschweißYesButtonColor}"
+    Command="{Binding NachtschweißYesCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+
+            <Button 
+    Text="Nein"
+    BackgroundColor="{Binding NachtschweißNoButtonColor}"
+    Command="{Binding NachtschweißNoCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+        </StackLayout>
+
+       
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+ Text="haben Sie Halsschmerzen?" 
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+            <Button 
+    Text="Ja"
+    BackgroundColor="{Binding HalsSchmerzenYesButtonColor}"
+    Command="{Binding HalsSchmerzenYesCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+
+            <Button 
+    Text="Nein"
+    BackgroundColor="{Binding HalsSchmerzenNoButtonColor}"
+    Command="{Binding HalsSchmerzenNoCommand}"
+    WidthRequest="65"
+    Margin="5"/>
+        </StackLayout>
+
+        
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+Text="haben Sie Schluckbeschwerden?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Button 
+   Text="Ja"
+   BackgroundColor="{Binding SchluckBeschwerdenYesButtonColor}"
+   Command="{Binding SchluckBeschwerdenYesCommand}"
+   WidthRequest="65"
+   Margin="5"/>
+
+            <Button 
+   Text="Nein"
+   BackgroundColor="{Binding SchluckBeschwerdenNoButtonColor}"
+   Command="{Binding SchluckBeschwerdenNoCommand}"
+   WidthRequest="65"
+   Margin="5"/>
+        </StackLayout>
+
+      
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+  Text="Ist Ihre Nasenatmung verlgegt lol kp was das heißen soll?" 
+  VerticalOptions="Center" 
+  HorizontalOptions="Center" />
+
+            <Button 
+   Text="Ja"
+   BackgroundColor="{Binding VerlegteNasenAtmungYesButtonColor}"
+   Command="{Binding VerlegteNasenAtmungYesCommand}"
+   WidthRequest="65"
+   Margin="5"/>
+
+            <Button 
+   Text="Nein"
+   BackgroundColor="{Binding VerlegteNasenAtmungNoButtonColor}"
+   Command="{Binding VerlegteNasenAtmungNoCommand}"
+   WidthRequest="65"
+   Margin="5"/>
+        </StackLayout>
+
+
+       
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+ Text="verspüren Sie ein Druckgefühl auf den Oberkieferzähnen oder der Stirn?" 
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+            <Button 
+ Text="Ja"
+ BackgroundColor="{Binding DruckYesButtonColor}"
+ Command="{Binding DruckYesCommand}"
+ WidthRequest="65"
+ Margin="5"/>
+
+            <Button 
+ Text="Nein"
+ BackgroundColor="{Binding DruckNoButtonColor}"
+ Command="{Binding DruckNoCommand}"
+ WidthRequest="65"
+ Margin="5"/>
+        </StackLayout>
+
+        <Label 
+        Text="haben Sie Ohrenschmerzen?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Label 
+        Text="ist Ihr Hören gestört?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        <Label 
+        Text="haben Sie Husten?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+       
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+ Text="haben Sie Magen-Darm-Beschwerden?" 
+ VerticalOptions="Center" 
+ HorizontalOptions="Center" />
+
+            <Button x:Name="DurchfallButton"
+    Text="Druchfall"
+    BackgroundColor="LightGray"
+    Clicked="OnDurchfallButtonClicked"
+    WidthRequest="65"
+    Margin="5"/>
+
+            <Button x:Name="UebelkeitButton"
+    Text="Übelkeit"
+    BackgroundColor="LightGray"
+    Clicked="OnUebelkeitButtonClicked"
+    WidthRequest="65"
+    Margin="5"/>
+            <Button x:Name="ErbrechenButton"
+Text="Erbrechen"
+BackgroundColor="LightGray"
+Clicked="OnErbrechenButtonClicked"
+WidthRequest="65"
+Margin="5"/>
+        </StackLayout>
+
+
+
+        <Label 
+        Text="haben Sie sonstige Beschwerden (z.B. Geschmacksstörungen)?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+        
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+Text="haben Sie Hautsymptome?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Button x:Name="HautsymptomeYesButton"
+     Text="Ja"
+     BackgroundColor="{Binding HautSymptomeYesButtonColor}"
+     Command="{Binding HautSymptomeYesCommand}"
+     WidthRequest="65"
+     Margin="5"/>
+
+            <Button x:Name="HautsymptomeNoButton"
+     Text="Nein"
+     BackgroundColor="{Binding HautSymptomeNoButtonColor}"
+     Command="{Binding HautSymptomeNoCommand}"
+     WidthRequest="65"
+     Margin="5"/>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+Text="haben Sie einen Corona-Schnelltest durchgeführt?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Button x:Name="CoronaYesButton"
+     Text="Ja"
+     BackgroundColor="LightGray"
+     Clicked="OnCoronaYesButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+
+            <Button x:Name="CoronaNoButton"
+     Text="Nein"
+     BackgroundColor="LightGray"
+     Clicked="OnCoronaNoButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+        </StackLayout>
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+Text="Sind Sie gegen Grippe geimpft?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Button x:Name="GrippeimpfungYesButton"
+     Text="Ja"
+     BackgroundColor="LightGray"
+     Clicked="OnGrippeimpfungYesButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+
+            <Button x:Name="GrippeimpfungNoButton"
+     Text="Nein"
+     BackgroundColor="LightGray"
+     Clicked="OnGrippeimpfungNoButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+        </StackLayout>
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+Text="haben Sie in den letzten 6 Monaten eine Grippeerkrankung gehabt?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+            <Button x:Name="GrippeYesButton"
+     Text="Ja"
+     BackgroundColor="LightGray"
+     Clicked="OnGrippeYesButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+
+            <Button x:Name="GrippeNoButton"
+     Text="Nein"
+     BackgroundColor="LightGray"
+     Clicked="OnGrippeNoButtonClicked"
+     WidthRequest="65"
+     Margin="5"/>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+            Text="haben Sie in den´letzten 6 Monaten Antibiotika erhalten?" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Button x:Name="AntibiotikaYesButton"
+            Text="Ja"
+            BackgroundColor="LightGray"
+            Clicked="OnAntibiotikaYesButtonClicked"
+            WidthRequest="65"
+            Margin="5"/>
+
+            <Button x:Name="AntibiotikaNoButton"
+            Text="Nein"
+            BackgroundColor="LightGray"
+            Clicked="OnAntibiotikaNoButtonClicked"
+            WidthRequest="65"
+            Margin="5"/>
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Label 
+            Text="haben Sie eine Lungenvorerkrankung?" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Button x:Name="LungenvorerkrankungYesButton"
+            Text="Ja"
+            BackgroundColor="LightGray"
+            Clicked="OnLungenvorerkrankungYesButtonClicked"
+            WidthRequest="65"
+            Margin="5"/>
+
+            <Button x:Name="LungenvorerkrankungNoButton"
+            Text="Nein"
+            BackgroundColor="LightGray"
+            Clicked="OnLungenvorerkrankungNoButtonClicked"
+            WidthRequest="65"
+            Margin="5"/>
+        </StackLayout>
+        
+        
+        
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+
+            <Label 
+            Text="Sind Sie Raucher?" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Button x:Name="SmokerYesButton"
+                    Text="Ja"
+                    BackgroundColor="LightGray"
+                    Command="{Binding SmokerYesCommand}"
+                    WidthRequest="65"
+                    Margin="5"/>
+
+            <Button x:Name="SmokerNoButton"
+                    Text="Nein"
+                    BackgroundColor="LightGray"
+                    Command="{Binding SmokerYesCommand}"
+                    WidthRequest="65"
+                    Margin="5"/>
+        </StackLayout>
+
+       
+
+
         <Button 
         Text="Speichern" 
         Command="{Binding SaveErkaeltungCommand}" 
