@@ -727,10 +727,44 @@ namespace SmarteAnamnese
         public async Task  SaveErkaeltung()
         {
             erkaeltung.BeschwerdeZeitraum = BeschwerdeZeitraum;
-            //erkaeltung.FieberHoehe = FieberHoehe;
-            //erkaeltung.Husten.AuswurfFarbe = HustenAuswurfFarbe;
-            //erkaeltung.SonstigeBeschwerden = SonstigeBeschwerden;
-            //erkaeltung.CoronaSchnelltest.ergebnis = PositvNegativ;
+            erkaeltung.PloetzlicherBeginn = PloetzlicherBeginn;
+            erkaeltung.Fieber = Fieber;
+            erkaeltung.FieberHoehe = FieberHoehe;
+            erkaeltung.Nachtschweiß = Nachtschweiß;
+            erkaeltung.HalsSchmerzen = HalsSchmerzen;
+            erkaeltung.SchluckBeschwerden = SchluckBeschwerden;
+            erkaeltung.VerlegteNasenAtmung = VerlegteNasenAtmung;
+            erkaeltung.Druck = Druck;
+            erkaeltung.Ohrenschmerzen = Ohrenschmerzen;
+            erkaeltung.Hoeren = Hoeren;
+            erkaeltung.Husten = Husten;
+            erkaeltung.Atemnot = Atemnot;
+            erkaeltung.FehlendeBelastbarkeit = FehlendeBelastbarkeit;
+            erkaeltung.AtemGeraeusche = AtemGeraeusche;
+            erkaeltung.Schmerzen = Schmerzen;
+            erkaeltung.Hautsymptome = Hautsymptome;
+            erkaeltung.CoronaSchnelltest = CoronaSchnelltest;
+            erkaeltung.PositivNegativ = PositivNegativ;
+            erkaeltung.GrippeImpfung = GrippeImpfung;
+            erkaeltung.GrippeCoronaErkrankung = GrippeCoronaErkrankung;
+            erkaeltung.Antibiotika = Antibiotika;
+            erkaeltung.Lungenvorerkrankung = Lungenvorerkrankung;
+            erkaeltung.Raucher = Raucher;
+            erkaeltung.SonstigeBeschwerden = SonstigeBeschwerden;
+
+            // Zuordnung für die Husten-Eigenschaften
+            erkaeltung.HustenDetails.Trocken = HustenTrocken;
+            erkaeltung.HustenDetails.Fest = HustenFest;
+            erkaeltung.HustenDetails.Loesend = HustenLoesend;
+            erkaeltung.HustenDetails.Auswurf = HustenAuswurf;
+            erkaeltung.HustenDetails.AuswurfFarbe = HustenAuswurfFarbe;
+
+            // Zuordnung für die Magen-Darm-Eigenschaften
+            erkaeltung.MagenDarmDetails.MagenDarm = MagenDarm;
+            erkaeltung.MagenDarmDetails.Durchfall = Durchfall;
+            erkaeltung.MagenDarmDetails.Uebelkeit = Uebelkeit;
+            erkaeltung.MagenDarmDetails.Erbrechen = Erbrechen;
+
             await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
         }
 
