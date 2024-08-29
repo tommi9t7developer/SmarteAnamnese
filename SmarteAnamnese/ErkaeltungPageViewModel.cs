@@ -22,9 +22,6 @@ namespace SmarteAnamnese
         private string beschwerdeZeitraum;
 
         [ObservableProperty]
-        private bool raucher;
-
-        [ObservableProperty]
         private bool ploetzlicherBeginn;
 
         [ObservableProperty]
@@ -49,7 +46,75 @@ namespace SmarteAnamnese
         private bool druck;
 
         [ObservableProperty]
+        private bool ohrenschmerzen;
+
+        [ObservableProperty]
+        private bool hoeren;
+
+        [ObservableProperty]
+        private bool husten;
+
+        [ObservableProperty]
+        private bool hustenTrocken = false;
+
+        [ObservableProperty]
+        private bool hustenFest = false;
+
+        [ObservableProperty]
+        private bool hustenLoesend = false;
+
+        [ObservableProperty]
+        private bool hustenAuswurf = false;
+
+        [ObservableProperty]
+        private string hustenAuswurfFarbe;
+
+        [ObservableProperty]
+        private bool atemnot;
+
+        [ObservableProperty]
+        private bool fehlendeBelastbarkeit;
+
+        [ObservableProperty]
+        private bool atemGeraeusche;
+
+        [ObservableProperty]
+        private bool schmerzen;
+
+        [ObservableProperty]
+        private bool magenDarm = false;
+
+        [ObservableProperty]
+        private bool durchfall = false;
+
+        [ObservableProperty]
+        private bool uebelkeit = false;
+
+        [ObservableProperty]
+        private bool erbrechen = false;
+
+        [ObservableProperty]
+        private string sonstigeBeschwerden;
+
+        [ObservableProperty]
         private bool hautsymptome;
+
+        //CORONASCHNELLTEST STRUCT positiv negativ FEHLT
+
+        [ObservableProperty]
+        private bool grippeImpfung;
+
+        [ObservableProperty]
+        private bool grippeCoronaErkrankung;
+
+        [ObservableProperty]
+        private bool antibiotika;
+
+        [ObservableProperty]
+        private bool lungenvorerkrankung;
+
+        [ObservableProperty]
+        private bool raucher;
 
         [ObservableProperty]
         private Color ploetzlicherBeginnYesButtonColor = Colors.LightGray;
@@ -94,7 +159,98 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private Color druckNoButtonColor = Colors.LightGray;
 
+        [ObservableProperty]
+        private Color ohrenschmerzenYesButtonColor = Colors.LightGray;
 
+        [ObservableProperty]
+        private Color ohrenschmerzenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hoerenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hoerenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hustenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hustenTrockenButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hustenFestButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hustenLoesendButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hustenAuswurfButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color atemnotYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color atemnotNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color fehlendeBelastbarkeitYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color fehlendeBelastbarkeitNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color atemGeraeuscheYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color atemGeraeuscheNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color schmerzenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color schmerzenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color magenDarmNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color durchfallYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color uebelkeitYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color erbrechenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hautSymptomeYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hautSymptomeNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color grippeImpfungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color grippeImpfungNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color grippeCoronaErkrankungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color grippeCoronaErkrankungNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color antibiotikaYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color antibiotikaNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color lungenvorerkrankungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color lungenvorerkrankungNoButtonColor = Colors.LightGray;
 
         [ObservableProperty]
         private Color smokerYesButtonColor = Colors.LightGray;
@@ -103,11 +259,7 @@ namespace SmarteAnamnese
         private Color smokerNoButtonColor = Colors.LightGray;
 
 
-        [ObservableProperty]
-        private Color hautSymptomeYesButtonColor = Colors.LightGray;
-
-        [ObservableProperty]
-        private Color hautSymptomeNoButtonColor = Colors.LightGray;
+       
 
         [RelayCommand]
         public void PloetzlicherBeginnYes()
@@ -222,20 +374,229 @@ namespace SmarteAnamnese
         }
 
         [RelayCommand]
-
-        public  void SmokerYes()
+        public void OhrenschmerzenYes()
         {
-            Raucher = true;
-            SmokerNoButtonColor = Colors.LightGray;
-            SmokerYesButtonColor = Colors.Green;
+            Ohrenschmerzen = true;
+            OhrenschmerzenYesButtonColor = Colors.Green;
+            OhrenschmerzenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void OhrenschmerzenNo()
+        {
+            Ohrenschmerzen = false;
+            OhrenschmerzenYesButtonColor = Colors.LightGray;
+            OhrenschmerzenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void HoerenYes()
+        {
+            Hoeren = true;
+            HoerenYesButtonColor = Colors.Green;
+            HoerenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void HoerenNo()
+        {
+            Hoeren = false;
+            HoerenYesButtonColor = Colors.LightGray;
+            HoerenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void HustenNo()
+        {
+            Husten = false;
+            HustenTrockenButtonColor = Colors.LightGray;
+            HustenFestButtonColor = Colors.LightGray;
+            HustenLoesendButtonColor = Colors.LightGray;
+            HustenAuswurfButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void HustenTrockenYes()
+        {
+            if (HustenTrocken == false)
+            {
+                HustenTrocken = true;
+                HustenTrockenButtonColor = Colors.Green;
+            }
+            else
+            {
+                HustenTrocken = false;
+                HustenTrockenButtonColor = Colors.LightGray;
+            }
+        }
+
+        [RelayCommand]
+        public void HustenFestYes()
+        {
+            if (HustenFest == false)
+            {
+                HustenFest = true;
+                HustenFestButtonColor = Colors.Green;
+            }
+            else
+            {
+                HustenFest = false;
+                HustenFestButtonColor = Colors.LightGray;
+            }
+        }
+
+        [RelayCommand]
+        public void HustenLoesendYes()
+        {
+            if (HustenLoesend == false)
+            {
+                HustenLoesend = true;
+                HustenLoesendButtonColor = Colors.Green;
+            }
+            else
+            {
+                HustenLoesend = false;
+                HustenLoesendButtonColor = Colors.LightGray;
+            }
         }
         [RelayCommand]
-        public void SmokerNo()
+        public void HustenAuswurfYes()
         {
-            Raucher = false;
-            SmokerYesButtonColor = Colors.LightGray;
-            SmokerNoButtonColor = Colors.Green;
+            if (HustenAuswurf == false)
+            {
+                HustenAuswurf = true;
+                HustenAuswurfButtonColor = Colors.Green;
+            }
+            else
+            {
+                HustenAuswurf= false;
+                HustenAuswurfButtonColor = Colors.LightGray;
+            }
         }
+
+
+        [RelayCommand]
+        public void AtemnotYes()
+        {
+            Atemnot = true;
+            AtemnotYesButtonColor = Colors.Green;
+            AtemnotNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AtemnotNo()
+        {
+            Atemnot = false;
+            AtemnotYesButtonColor = Colors.LightGray;
+            AtemnotNoButtonColor = Colors.Green;
+        }
+
+
+        [RelayCommand]
+        public void FehlendeBelastbarkeitYes()
+        {
+            FehlendeBelastbarkeit = true;
+            FehlendeBelastbarkeitYesButtonColor = Colors.Green;
+            FehlendeBelastbarkeitNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void FehlendeBelastbarkeitNo()
+        {
+            FehlendeBelastbarkeit = false;
+            FehlendeBelastbarkeitYesButtonColor = Colors.LightGray;
+            FehlendeBelastbarkeitNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void AtemGeraeuscheYes()
+        {
+            AtemGeraeusche = true;
+            AtemGeraeuscheYesButtonColor = Colors.Green;
+            AtemGeraeuscheNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AtemGeraeuscheNo()
+        {
+            AtemGeraeusche = false;
+            AtemGeraeuscheYesButtonColor = Colors.LightGray;
+            AtemGeraeuscheNoButtonColor = Colors.Green;
+        }
+
+
+        [RelayCommand]
+        public void SchmerzenYes()
+        {
+            Schmerzen = true;
+            SchmerzenYesButtonColor = Colors.Green;
+            SchmerzenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void SchmerzenNo()
+        {
+            Schmerzen = false;
+            SchmerzenYesButtonColor = Colors.LightGray;
+            SchmerzenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void MagenDarmNo()
+        {
+            MagenDarm = false;
+            DurchfallYesButtonColor = Colors.LightGray;
+            ErbrechenYesButtonColor = Colors.LightGray;
+            UebelkeitYesButtonColor = Colors.LightGray;
+        }
+
+
+        [RelayCommand]
+        public void DurchfallYes()
+        {
+            if (Durchfall == false)
+            {
+                Durchfall = true;
+                DurchfallYesButtonColor = Colors.Green;
+            }
+            else
+            {
+                Durchfall = false;
+                DurchfallYesButtonColor = Colors.LightGray;
+            }
+        }
+
+        [RelayCommand]
+        public void UebelkeitYes()
+        {
+            if (Uebelkeit == false)
+            {
+                Uebelkeit = true;
+                UebelkeitYesButtonColor = Colors.Green;
+            }
+            else
+            {
+                Uebelkeit = false;
+                UebelkeitYesButtonColor = Colors.LightGray;
+            }
+        }
+
+
+        [RelayCommand]
+        public void ErbrechenYes()
+        {
+            if (Erbrechen == false)
+            {
+                Erbrechen = true;
+                ErbrechenYesButtonColor = Colors.Green;
+            }
+            else
+            {
+                Erbrechen = false;
+                ErbrechenYesButtonColor = Colors.LightGray;
+            }
+        }
+
 
         [RelayCommand]
         public void HautSymptomeYes()
@@ -253,12 +614,94 @@ namespace SmarteAnamnese
             HautSymptomeNoButtonColor = Colors.Green;
         }
 
+        [RelayCommand]
+        public void GrippeImpfungYes()
+        {
+            GrippeImpfung = true;
+            GrippeImpfungYesButtonColor = Colors.Green;
+            GrippeImpfungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GrippeImpfungNo()
+        {
+            GrippeImpfung = false;
+            GrippeImpfungYesButtonColor = Colors.LightGray;
+            GrippeImpfungNoButtonColor = Colors.Green;
+        }
+
+
+        [RelayCommand]
+        public void GrippeCoronaErkrankungYes()
+        {
+            GrippeCoronaErkrankung = true;
+            GrippeCoronaErkrankungYesButtonColor = Colors.Green;
+            GrippeCoronaErkrankungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GrippeCoronaErkrankungNo()
+        {
+            GrippeCoronaErkrankung = false;
+            GrippeCoronaErkrankungYesButtonColor = Colors.LightGray;
+            GrippeCoronaErkrankungNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void AntibiotikaYes()
+        {
+            Antibiotika = true;
+            AntibiotikaYesButtonColor = Colors.Green;
+            AntibiotikaNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AntibiotikaNo()
+        {
+            Antibiotika = false;
+            AntibiotikaYesButtonColor = Colors.LightGray;
+            AntibiotikaNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void LungenvorerkrankungYes()
+        {
+            Lungenvorerkrankung = true;
+            LungenvorerkrankungNoButtonColor = Colors.LightGray;
+            LungenvorerkrankungYesButtonColor = Colors.Green;
+        }
+        [RelayCommand]
+        public void LungenvorerkrankungNo()
+        {
+            Lungenvorerkrankung = false;
+            LungenvorerkrankungYesButtonColor = Colors.LightGray;
+            LungenvorerkrankungNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public  void SmokerYes()
+        {
+            Raucher = true;
+            SmokerNoButtonColor = Colors.LightGray;
+            SmokerYesButtonColor = Colors.Green;
+        }
+        [RelayCommand]
+        public void SmokerNo()
+        {
+            Raucher = false;
+            SmokerYesButtonColor = Colors.LightGray;
+            SmokerNoButtonColor = Colors.Green;
+        }
+
+     
 
         [RelayCommand]
         public async Task  SaveErkaeltung()
         {
             erkaeltung.BeschwerdeZeitraum = BeschwerdeZeitraum;
             //erkaeltung.FieberHoehe = FieberHoehe;
+            //erkaeltung.Husten.AuswurfFarbe = HustenAuswurfFarbe;
+            //erkaeltung.SonstigeBeschwerden = SonstigeBeschwerden;
             await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
         }
 
