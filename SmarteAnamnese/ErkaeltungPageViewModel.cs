@@ -104,6 +104,9 @@ namespace SmarteAnamnese
         private bool coronaSchnelltest;
 
         [ObservableProperty]
+        private string positivNegativ;
+
+        [ObservableProperty]
         private bool grippeImpfung;
 
         [ObservableProperty]
@@ -636,6 +639,7 @@ namespace SmarteAnamnese
             CoronaSchnelltest = false;
             CoronaSchnelltestYesButtonColor = Colors.LightGray;
             CoronaSchnelltestNoButtonColor = Colors.Green;
+            PositivNegativ = null;
         }
 
         [RelayCommand]
@@ -726,6 +730,7 @@ namespace SmarteAnamnese
             //erkaeltung.FieberHoehe = FieberHoehe;
             //erkaeltung.Husten.AuswurfFarbe = HustenAuswurfFarbe;
             //erkaeltung.SonstigeBeschwerden = SonstigeBeschwerden;
+            //erkaeltung.CoronaSchnelltest.ergebnis = PositvNegativ;
             await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
         }
 

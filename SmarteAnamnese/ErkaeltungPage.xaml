@@ -482,7 +482,8 @@ Text="Ergebnis:"
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
-                <Picker x:Name="PositivNegativPicker">
+                <Picker x:Name="PositivNegativPicker"
+        SelectedItem="{Binding PositivNegativ, Mode=TwoWay}">
                     <Picker.ItemsSource>
                         <x:Array Type="{x:Type x:String}">
                             <x:String>Positiv</x:String>
