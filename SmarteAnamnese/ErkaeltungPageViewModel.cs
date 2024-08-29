@@ -100,6 +100,8 @@ namespace SmarteAnamnese
         private bool hautsymptome;
 
         //CORONASCHNELLTEST STRUCT positiv negativ FEHLT
+        [ObservableProperty]
+        private bool coronaSchnelltest;
 
         [ObservableProperty]
         private bool grippeImpfung;
@@ -227,6 +229,12 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color hautSymptomeNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color coronaSchnelltestYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color coronaSchnelltestNoButtonColor = Colors.LightGray;
 
         [ObservableProperty]
         private Color grippeImpfungYesButtonColor = Colors.LightGray;
@@ -612,6 +620,22 @@ namespace SmarteAnamnese
             Hautsymptome = false;
             HautSymptomeYesButtonColor = Colors.LightGray;
             HautSymptomeNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void CoronaSchnelltestYes()
+        {
+            CoronaSchnelltest = true;
+            CoronaSchnelltestYesButtonColor = Colors.Green;
+            CoronaSchnelltestNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void CoronaSchnelltestNo()
+        {
+            CoronaSchnelltest = false;
+            CoronaSchnelltestYesButtonColor = Colors.LightGray;
+            CoronaSchnelltestNoButtonColor = Colors.Green;
         }
 
         [RelayCommand]

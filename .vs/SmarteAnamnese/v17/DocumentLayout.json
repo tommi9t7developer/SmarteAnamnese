@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ErkaeltungPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
               "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",
-              "ViewState": "AQIAAHsCAAAAAAAAAAAAAIoCAAAkAAAA",
+              "ViewState": "AQIAAPcAAAAAAAAAAAAQwBIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T07:28:45.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-29T07:28:45.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ErkaeltungPage.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
               "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPage.xaml",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPage.xaml",
               "RelativeToolTip": "SmarteAnamnese\\ErkaeltungPage.xaml",
-              "ViewState": "AQIAAA4CAAAAAAAAAAAAAGACAAAlAAAA",
+              "ViewState": "AQIAANwBAAAAAAAAAAAAAO0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-08-29T06:57:25.519Z",
               "EditorCaption": ""

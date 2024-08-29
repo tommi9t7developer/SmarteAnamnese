@@ -5,7 +5,9 @@
              Title="ErkaeltungPage">
     <ScrollView>
         <VerticalStackLayout>
-            <Label 
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
         Text="Seit wann haben Sie Beschwerden?" 
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
@@ -14,7 +16,7 @@
         Placeholder="Geben Sie hier Ihre Antwort ein"
         VerticalOptions="Center" 
         HorizontalOptions="Center" />
-
+            </StackLayout>
 
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
@@ -154,7 +156,7 @@ HorizontalOptions="Center" />
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label 
-  Text="Ist Ihre Nasenatmung verlgegt lol kp was das heißen soll?" 
+  Text="Ist Ihre Nasenatmung verlegt?" 
   VerticalOptions="Center" 
   HorizontalOptions="Center" />
 
@@ -392,27 +394,27 @@ HorizontalOptions="Center" />
 
                 <Button 
 Text="Nein"
-BackgroundColor="LightGray"
+BackgroundColor="{Binding MagenDarmYesButtonColor}"
 Command="{Binding MagenDarmNoCommand}"
 WidthRequest="65"
 Margin="5"/>
 
                 <Button
     Text="Durchfall"
-    BackgroundColor="LightGray"
+    BackgroundColor="{Binding DurchfallYesButtonColor}"
     Command="{Binding DurchfallYesCommand}"
     WidthRequest="100"
     Margin="5"/>
 
                 <Button 
     Text="Übelkeit"
-    BackgroundColor="LightGray"
+    BackgroundColor="{Binding UebelkeitYesButtonColor}"
     Command="{Binding UebelkeitYesCommand}"
     WidthRequest="100"
     Margin="5"/>
                 <Button 
 Text="Erbrechen"
-BackgroundColor="LightGray"
+BackgroundColor="{Binding ErbrechenYesButtonColor}"
 Command="{Binding ErbrechenYesCommand}"
 WidthRequest="100"
 Margin="5"/>
@@ -463,27 +465,32 @@ HorizontalOptions="Center" />
 
                 <Button 
      Text="Nein"
-     BackgroundColor="LightGray"
+     BackgroundColor="{Binding CoronaSchnelltestNoButtonColor}"
      Command="{Binding CoronaSchnelltestNoCommand}"
      WidthRequest="65"
      Margin="5"/>
 
                 <Button 
      Text="Ja"
-     BackgroundColor="LightGray"
+     BackgroundColor="{Binding CoronaSchnelltestYesButtonColor}"
      Command="{Binding CoronaSchnelltestYesCommand}"
      WidthRequest="65"
      Margin="5"/>
 
-                <RadioButton x:Name="PositivRadioButton" 
-                         Content="Positiv"
-                         GroupName="Bewertung" />
-                <RadioButton x:Name="NegativRadioButton" 
-                         Content="Negativ"
-                         GroupName="Bewertung" />
+                <Label 
+Text="Ergebnis:" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+
+                <Picker x:Name="PositivNegativPicker">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Positiv</x:String>
+                            <x:String>Negativ</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
             </StackLayout>
-
-
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label 
@@ -493,14 +500,14 @@ HorizontalOptions="Center" />
 
                 <Button x:Name="GrippeimpfungYesButton"
      Text="Ja"
-     BackgroundColor="LightGray"
+     BackgroundColor="{Binding GrippeImpfungYesButtonColor}"
     Command="{Binding GrippeImpfungYesCommand}"
      WidthRequest="65"
      Margin="5"/>
 
                 <Button x:Name="GrippeimpfungNoButton"
      Text="Nein"
-     BackgroundColor="LightGray"
+     BackgroundColor="{Binding GrippeImpfungNoButtonColor}"
      Command="{Binding GrippeImpfungNoCommand}"
      WidthRequest="65"
      Margin="5"/>
@@ -510,21 +517,21 @@ HorizontalOptions="Center" />
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label 
-Text="haben Sie in den letzten 6 Monaten eine Grippeerkrankung gehabt?" 
+Text="haben Sie in den letzten 6 Monaten eine Grippe- oder Coronaerkrankung gehabt?" 
 VerticalOptions="Center" 
 HorizontalOptions="Center" />
 
                 <Button x:Name="GrippeYesButton"
      Text="Ja"
-     BackgroundColor="LightGray"
-     Command="{Binding GrippeErkrankungYesCommand}"
+     BackgroundColor="{Binding GrippeCoronaErkrankungYesButtonColor}"
+     Command="{Binding GrippeCoronaErkrankungYesCommand}"
      WidthRequest="65"
      Margin="5"/>
 
                 <Button x:Name="GrippeNoButton"
      Text="Nein"
-     BackgroundColor="LightGray"
-     Command="{Binding GrippeErkrankungNoCommand}"
+     BackgroundColor="{Binding GrippeCoronaErkrankungNoButtonColor}"
+     Command="{Binding GrippeCoronaErkrankungNoCommand}"
      WidthRequest="65"
      Margin="5"/>
             </StackLayout>
@@ -538,14 +545,14 @@ HorizontalOptions="Center" />
 
                 <Button x:Name="AntibiotikaYesButton"
             Text="Ja"
-            BackgroundColor="LightGray"
+            BackgroundColor="{Binding AntibiotikaYesButtonColor}"
             Command="{Binding AntibiotikaYesCommand}"
             WidthRequest="65"
             Margin="5"/>
 
                 <Button x:Name="AntibiotikaNoButton"
             Text="Nein"
-            BackgroundColor="LightGray"
+            BackgroundColor="{Binding AntibiotikaNoButtonColor}"
             Command="{Binding AntibiotikaNoCommand}"
             WidthRequest="65"
             Margin="5"/>
@@ -560,14 +567,14 @@ HorizontalOptions="Center" />
 
                 <Button x:Name="LungenvorerkrankungYesButton"
             Text="Ja"
-            BackgroundColor="LightGray"
+            BackgroundColor="{Binding LungenvorerkrankungYesButtonColor}"
             Command="{Binding LungenvorerkrankungYesCommand}"
             WidthRequest="65"
             Margin="5"/>
 
                 <Button x:Name="LungenvorerkrankungNoButton"
             Text="Nein"
-            BackgroundColor="LightGray"
+            BackgroundColor="{Binding LungenvorerkrankungNoButtonColor}"
             Command="{Binding LungenvorerkrankungNoCommand}"
             WidthRequest="65"
             Margin="5"/>
@@ -584,15 +591,15 @@ HorizontalOptions="Center" />
 
                 <Button x:Name="SmokerYesButton"
                     Text="Ja"
-                    BackgroundColor="LightGray"
+                    BackgroundColor="{Binding SmokerYesButtonColor}"
                     Command="{Binding SmokerYesCommand}"
                     WidthRequest="65"
                     Margin="5"/>
 
                 <Button x:Name="SmokerNoButton"
                     Text="Nein"
-                    BackgroundColor="LightGray"
-                    Command="{Binding SmokerYesCommand}"
+                    BackgroundColor="{Binding SmokerNoButtonColor}"
+                    Command="{Binding SmokerNoCommand}"
                     WidthRequest="65"
                     Margin="5"/>
             </StackLayout>
