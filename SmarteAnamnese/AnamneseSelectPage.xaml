@@ -12,7 +12,8 @@
          VerticalOptions="Fill" />
 
         <Button
-         Text="Rückenschmerzen"
+         Command="{Binding GoToMagenDarmPageCommand}"
+         Text="MagenDarm"
          Grid.Row="1"
          HorizontalOptions="Fill"
          VerticalOptions="Fill" />

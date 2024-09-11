@@ -21,6 +21,7 @@ namespace SmarteAnamnese
             builder.Services.AddSingleton<PersonalienPageViewModel>();
             builder.Services.AddSingleton<AnamneseSelectPageViewModel>();
             builder.Services.AddSingleton<ErkaeltungPageViewModel>();
+            builder.Services.AddSingleton<MagenDarmPageViewModel>();
 #if DEBUG
             builder.Logging.AddDebug();
 #endif

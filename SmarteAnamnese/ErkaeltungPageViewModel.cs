@@ -765,7 +765,7 @@ namespace SmarteAnamnese
             erkaeltung.MagenDarmDetails.Uebelkeit = Uebelkeit;
             erkaeltung.MagenDarmDetails.Erbrechen = Erbrechen;
 
-            await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
+            //await Application.Current.MainPage.DisplayAlert("Titel", erkaeltung.BeschwerdeZeitraum, "OK");
         }
 
         [RelayCommand]

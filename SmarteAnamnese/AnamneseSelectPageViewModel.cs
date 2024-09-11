@@ -15,5 +15,12 @@ namespace SmarteAnamnese
             // Navigiere zur ErkältungsAnamnesePage
             await Shell.Current.GoToAsync(nameof(ErkaeltungPage));
         }
+
+        [RelayCommand]
+        public async Task GoToMagenDarmPage()
+        {
+            // Navigiere zur ErkältungsAnamnesePage
+            await Shell.Current.GoToAsync(nameof(MagenDarmPage));
+        }
     }
 }
