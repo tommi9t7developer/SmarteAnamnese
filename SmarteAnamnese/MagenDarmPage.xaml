@@ -4,6 +4,40 @@
              x:Class="SmarteAnamnese.MagenDarmPage"
              Title="MagenDarmPage">
     <ScrollView>
-        
+        <VerticalStackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                Text="Seit wann haben Sie Beschwerden? (Tage, Monate, Jahre?)" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+                <Entry 
+                Text="{Binding BeschwerdeZeitraum}" 
+                Placeholder="Geben Sie hier Ihre Antwort ein"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                Text="Sind die Beschwerden plötzlich aufgetreten?" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+                <Button 
+                Text="Ja"
+                BackgroundColor="{Binding BeschwerdeNachInfektYesButtonColor}"
+                Command="{Binding BeschwerdeNachInfektYesCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+
+                <Button 
+                Text="Nein"
+                BackgroundColor="{Binding BeschwerdeNachInfektNoButtonColor}"
+                Command="{Binding BeschwerdeNachInfektNoCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+            </StackLayout>
+
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

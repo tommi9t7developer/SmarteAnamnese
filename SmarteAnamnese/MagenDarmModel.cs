@@ -8,5 +8,6 @@ namespace SmarteAnamnese
 {
     public class MagenDarmModel : AnamneseModel
     {
+        public string BeschwerdeZeitraum { get; set; }
     }
 }
