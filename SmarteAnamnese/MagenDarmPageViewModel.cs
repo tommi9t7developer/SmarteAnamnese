@@ -25,6 +25,9 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool beschwerdeNachInfekt;
 
+        [ObservableProperty]
+        private bool vorerekrankungenBeschwerde;
+
 
 
         [ObservableProperty]
@@ -32,6 +35,12 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color beschwerdeNachInfektNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vorerkrankungenBeschwerdenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vorerkrankungenBeschwerdenNoButtonColor = Colors.LightGray;
 
 
 
@@ -49,6 +58,33 @@ namespace SmarteAnamnese
             BeschwerdeNachInfekt = false;
             BeschwerdeNachInfektYesButtonColor = Colors.LightGray;
             BeschwerdeNachInfektNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void VorerkrankungenBeschwerdenYes()
+        {
+            VorerekrankungenBeschwerde = true;
+            VorerkrankungenBeschwerdenYesButtonColor = Colors.Green;
+            VorerkrankungenBeschwerdenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void VorerkrankungenBeschwerdenNo()
+        {
+            VorerekrankungenBeschwerde = false;
+            VorerkrankungenBeschwerdenYesButtonColor = Colors.LightGray;
+            VorerkrankungenBeschwerdenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public async Task GoToFinalPage()
+        {
+            magendarm.BeschwerdeZeitraum = BeschwerdeZeitraum;
+            magendarm.BeschwerdeNachInfekt = BeschwerdeNachInfekt;
+            magendarm.VorerkrankungenBeschwerde = VorerekrankungenBeschwerde;
+            _dataService.Patient.Anamnese = magendarm;
+            // Navigiere zur ErkältungsAnamnesePage
+            await Shell.Current.GoToAsync(nameof(FinalPage));
         }
     }
 }

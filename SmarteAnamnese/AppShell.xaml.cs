@@ -11,6 +11,7 @@
             Routing.RegisterRoute(nameof(ErkaeltungPage), typeof(ErkaeltungPage));
             Routing.RegisterRoute(nameof(MagenDarmPage), typeof(MagenDarmPage));
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
+            Routing.RegisterRoute(nameof(FinalPage), typeof(FinalPage));
 
 
             // Setze die MainPage als Startseite

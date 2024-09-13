@@ -37,6 +37,33 @@
                 WidthRequest="65"
                 Margin="5"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                Text="Gibt es Vorerkrankungen mit denen die Beschwerden einhergehen könnten?" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+                <Button 
+                Text="Ja"
+                BackgroundColor="{Binding VorerkrankungenBeschwerdenYesButtonColor}"
+                Command="{Binding VorerkrankungenBeschwerdenYesCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+
+                <Button 
+                Text="Nein"
+                BackgroundColor="{Binding VorerkrankungenBeschwerdenNoButtonColor}"
+                Command="{Binding VorerkrankungenBeschwerdenNoCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+
+                <Button
+                  Command="{Binding GoToFinalPageCommand}"
+                  Text="Speichern"
+                  Grid.Row="1"
+                  HorizontalOptions="Fill"
+                  VerticalOptions="Fill" />
+            </StackLayout>
 
         </VerticalStackLayout>
     </ScrollView>
