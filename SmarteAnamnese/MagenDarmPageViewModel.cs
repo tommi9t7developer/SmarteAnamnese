@@ -28,6 +28,12 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool vorerekrankungenBeschwerde;
 
+        [ObservableProperty]
+        private bool operationMagenDarm;
+
+        [ObservableProperty]
+        private string tumor;
+
 
 
         [ObservableProperty]
@@ -41,6 +47,12 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color vorerkrankungenBeschwerdenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color operationMagenDarmYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color operationMagenDarmNoButtonColor = Colors.LightGray;
 
 
 
@@ -77,11 +89,29 @@ namespace SmarteAnamnese
         }
 
         [RelayCommand]
+        public void OperationMagenDarmYes()
+        {
+            OperationMagenDarm = true;
+            OperationMagenDarmYesButtonColor = Colors.Green;
+            OperationMagenDarmNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void OperationMagenDarmNo()
+        {
+            OperationMagenDarm = false;
+            OperationMagenDarmYesButtonColor = Colors.LightGray;
+            OperationMagenDarmNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
         public async Task GoToFinalPage()
         {
             magendarm.BeschwerdeZeitraum = BeschwerdeZeitraum;
             magendarm.BeschwerdeNachInfekt = BeschwerdeNachInfekt;
             magendarm.VorerkrankungenBeschwerde = VorerekrankungenBeschwerde;
+            magendarm.OperationMagenDarm = OperationMagenDarm;
+            magendarm.Tumor = Tumor;
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
             await Shell.Current.GoToAsync(nameof(FinalPage));

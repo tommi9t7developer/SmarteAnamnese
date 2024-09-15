@@ -24,7 +24,7 @@ namespace SmarteAnamnese
             if (_dataService.Patient.Anamnese is MagenDarmModel magenDarmAnamnese)
                 await Application.Current.MainPage.DisplayAlert(
                     "Alert",
-                   magenDarmAnamnese.BeschwerdeZeitraum,  // Display the type
+                   magenDarmAnamnese.Tumor,  // Display the type
                     "OK"
                 );
            

@@ -8,10 +8,14 @@ namespace SmarteAnamnese
 {
     public class MagenDarmModel : AnamneseModel
     {
-        public string BeschwerdeZeitraum { get; set; }
+        public string BeschwerdeZeitraum { get; set; } = string.Empty; // Standardwert
 
         public bool BeschwerdeNachInfekt {  get; set; }
 
         public bool VorerkrankungenBeschwerde {  get; set; }
+
+        public bool OperationMagenDarm { get; set; }
+
+        public string Tumor { get; set; } = string.Empty; // Standardwert
     }
 }

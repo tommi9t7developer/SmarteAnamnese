@@ -57,14 +57,47 @@
                 WidthRequest="65"
                 Margin="5"/>
 
-                <Button
-                  Command="{Binding GoToFinalPageCommand}"
-                  Text="Speichern"
-                  Grid.Row="1"
-                  HorizontalOptions="Fill"
-                  VerticalOptions="Fill" />
+               
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                Text="Operationen am Magendarmtrakt?" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
 
+                <Button 
+                Text="Ja"
+                BackgroundColor="{Binding OperationMagenDarmYesButtonColor}"
+                Command="{Binding OperationMagenDarmYesCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+
+                <Button 
+                Text="Nein"
+                BackgroundColor="{Binding OperationMagenDarmNoButtonColor}"
+                Command="{Binding OperationMagenDarmNoCommand}"
+                WidthRequest="65"
+                Margin="5"/>
+
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                 Text="Tumor?" 
+                 VerticalOptions="Center" 
+                 HorizontalOptions="Center" />
+                <Entry 
+                 Text="{Binding Tumor}" 
+                 Placeholder="Geben Sie hier Ihre Antwort ein"
+                 VerticalOptions="Center" 
+                 HorizontalOptions="Center" />
+            </StackLayout>
+            <Button
+               Command="{Binding GoToFinalPageCommand}"
+               Text="Speichern"
+               Grid.Row="1"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
