@@ -35,7 +35,7 @@ namespace SmarteAnamnese
         [RelayCommand]
         public async Task GoToPersonalienPage()
         {
-            _dataService.Patient = new Patient(sprache);
+            _dataService.Patient = new Patient(Sprache);
 
             // Navigiere zur AnamneseSelectPage
             await Shell.Current.GoToAsync(nameof(PersonalienPage));

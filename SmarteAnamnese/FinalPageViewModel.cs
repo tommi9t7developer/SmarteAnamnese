@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,27 +19,15 @@ namespace SmarteAnamnese
         }
 
         [RelayCommand]
-        public async void Test()
+        public async Task Test()
         {
-            // Null-checking the entire object chain
-            if (_dataService?.Patient?.Anamnese?.Typ != null)
-            {
-                // If everything is fine, show the alert with the Anamnese Typ
+            if (_dataService.Patient.Anamnese is MagenDarmModel magenDarmAnamnese)
                 await Application.Current.MainPage.DisplayAlert(
                     "Alert",
-                    _dataService.Patient.Anamnese.ToString(),  // Display the type
+                   magenDarmAnamnese.BeschwerdeZeitraum,  // Display the type
                     "OK"
                 );
-            }
-            else
-            {
-                // If something is null, notify the user or log for debugging
-                await Application.Current.MainPage.DisplayAlert(
-                    "Alert",
-                    "Anamnese type is not available.", // Fallback message
-                    "OK"
-                );
-            }
+           
         }
 
     }
