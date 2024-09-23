@@ -82,6 +82,17 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private string groesse;
 
+        [ObservableProperty]
+        private bool stuhlGangTaeglich = false;
+
+        [ObservableProperty]
+        private bool stuhlGangAllePaarTage = false;
+
+        [ObservableProperty]
+        private bool stuhlGangWoechentlich = false;
+
+        
+
 
 
 
@@ -163,6 +174,15 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color gewichtsverlustNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color stuhlGangTaeglichButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color stuhlGangAllePaarTageButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color stuhlGangWoechentlichButtonColor = Colors.LightGray;
 
 
 
@@ -372,6 +392,42 @@ namespace SmarteAnamnese
             Gewichtsverlust = false;
             GewichtsverlustYesButtonColor = Colors.LightGray;
             GewichtsverlustNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void StuhlGangTaeglichYes()
+        {
+            StuhlGangTaeglich = true;
+            StuhlGangAllePaarTage = false;
+            StuhlGangWoechentlich = false;
+            StuhlGangTaeglichButtonColor = Colors.Green;
+            StuhlGangAllePaarTageButtonColor = Colors.LightGray;
+            StuhlGangWoechentlichButtonColor = Colors.LightGray;
+
+        }
+
+        [RelayCommand]
+        public void StuhlGangAllePaarTageYes()
+        {
+            StuhlGangTaeglich = false;
+            StuhlGangAllePaarTage = true;
+            StuhlGangWoechentlich = false;
+            StuhlGangTaeglichButtonColor = Colors.LightGray;
+            StuhlGangAllePaarTageButtonColor = Colors.Green;
+            StuhlGangWoechentlichButtonColor = Colors.LightGray;
+
+        }
+
+        [RelayCommand]
+        public void StuhlGangWoechentlichYes()
+        {
+            StuhlGangTaeglich = false;
+            StuhlGangAllePaarTage = false;
+            StuhlGangWoechentlich = true;
+            StuhlGangTaeglichButtonColor = Colors.LightGray;
+            StuhlGangAllePaarTageButtonColor = Colors.LightGray;
+            StuhlGangWoechentlichButtonColor = Colors.Green;
+
         }
 
 

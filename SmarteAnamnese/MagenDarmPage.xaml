@@ -363,6 +363,31 @@ VerticalOptions="Center"
 HorizontalOptions="Center" />
             </StackLayout>
 
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Stuhlgang?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Button 
+Text="Täglich"
+BackgroundColor="{Binding StuhlGangTaeglichButtonColor}"
+Command="{Binding StuhlGangTaeglichYesCommand}"
+WidthRequest="65"
+Margin="5"/>
+                <Button 
+Text="Alle Paar Tage"
+BackgroundColor="{Binding StuhlGangAllePaarTageButtonColor}"
+Command="{Binding StuhlGangAllePaarTageYesCommand}"
+WidthRequest="65"
+Margin="5"/>
+                <Button 
+Text="Wöchentlich"
+BackgroundColor="{Binding StuhlGangWoechentlichButtonColor}"
+Command="{Binding StuhlGangWoechentlichYesCommand}"
+WidthRequest="65"
+Margin="5"/>
+            </StackLayout>
+
 
             <Button
                Command="{Binding GoToFinalPageCommand}"

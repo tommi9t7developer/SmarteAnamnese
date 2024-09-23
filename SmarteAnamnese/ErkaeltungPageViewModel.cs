@@ -420,7 +420,7 @@ namespace SmarteAnamnese
         public void HustenNo()
         {
             Husten = false;
-            HustenTrockenButtonColor = Colors.LightGray;
+            HustenTrockenButtonColor = Colors.Green;
             HustenFestButtonColor = Colors.LightGray;
             HustenLoesendButtonColor = Colors.LightGray;
             HustenAuswurfButtonColor = Colors.LightGray;
