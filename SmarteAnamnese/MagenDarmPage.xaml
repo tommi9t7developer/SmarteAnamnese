@@ -326,6 +326,42 @@ HorizontalOptions="Center" />
       WidthRequest="65"
       Margin="5"/>
             </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Haben Sie merklich an Gewicht verloren, wenn ja wieviele Kilo?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding GewichtVerloren}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Ihr aktuelles Gewicht?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding Gewicht}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Ihre Größe in cm?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding Groesse}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
 
 
             <Button

@@ -44,6 +44,12 @@ namespace SmarteAnamnese
 
         public bool Gewichtsverlust { get; set; }
 
+        public string GewichtVerloren { get; set; } = string.Empty; // Standardwert 
+
+        public string Gewicht { get; set; } = string.Empty; // Standardwert
+
+        public string Groesse { get; set; } = string.Empty; // Standardwert
+
 
     }
 }

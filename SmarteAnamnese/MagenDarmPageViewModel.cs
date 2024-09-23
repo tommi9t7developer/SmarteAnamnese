@@ -73,6 +73,15 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool gewichtsverlust;
 
+        [ObservableProperty]
+        private string gewichtVerloren;
+
+        [ObservableProperty]
+        private string gewicht;
+
+        [ObservableProperty]
+        private string groesse;
+
 
 
 
@@ -387,6 +396,9 @@ namespace SmarteAnamnese
             magendarm.Muedigkeit = Muedigkeit;
             magendarm.Abgeschlagenheit = Abgeschlagenheit;
             magendarm.Gewichtsverlust = Gewichtsverlust;
+            magendarm.GewichtVerloren = GewichtVerloren;
+            magendarm.Gewicht = Gewicht;
+            magendarm.Groesse = Groesse;
             // MagenDarm als Anmnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
