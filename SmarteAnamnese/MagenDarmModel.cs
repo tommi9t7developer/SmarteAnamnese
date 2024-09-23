@@ -28,6 +28,22 @@ namespace SmarteAnamnese
 
         public bool Nachtschweiss { get; set; }
 
+        public bool Durchfall { get; set; }
+
         public bool Fieber { get; set; }
+
+        public string FieberHoehe { get; set; } = string.Empty; // Standardwert
+
+        public string WeitereVeraenderungen { get; set; } = string.Empty; // Standardwert 
+
+        public bool Kopfschmerzen { get; set; }
+
+        public bool Muedigkeit { get; set; }
+
+        public bool Abgeschlagenheit { get; set; }
+
+        public bool Gewichtsverlust { get; set; }
+
+
     }
 }

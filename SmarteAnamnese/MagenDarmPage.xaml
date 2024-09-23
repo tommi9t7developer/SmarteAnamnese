@@ -185,6 +185,27 @@
       Margin="5"/>
             </StackLayout>
 
+            <!-- Durchfall -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Durchfall?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding DurchfallYesButtonColor}"
+      Command="{Binding DurchfallYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding DurchfallNoButtonColor}"
+      Command="{Binding DurchfallNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+
             <!-- Fieber -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label 
@@ -204,6 +225,108 @@
       WidthRequest="65"
       Margin="5"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+        Text="Höhe des Fiebers?" 
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+                <Entry 
+        Text="{Binding FieberHoehe}" 
+        Placeholder="Geben Sie hier Ihre Antwort ein"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Sofern Sie die Beschwerden schon seit Monaten/Jahren haben, konnten Sie noch weitere Veränderungen feststellen?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding WeitereVeraenderungen}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+            <!-- Kopfschmerzen -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Kopfschmerzen?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding KopfschmerzenYesButtonColor}"
+      Command="{Binding KopfschmerzenYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding KopfschmerzenNoButtonColor}"
+      Command="{Binding KopfschmerzenNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Müdigkeit -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Müdigkeit?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding MuedigkeitYesButtonColor}"
+      Command="{Binding MuedigkeitYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding MuedigkeitNoButtonColor}"
+      Command="{Binding MuedigkeitNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Abgeschlagenheit -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Abgeschlagenheit?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding AbgeschlagenheitYesButtonColor}"
+      Command="{Binding AbgeschlagenheitYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding AbgeschlagenheitNoButtonColor}"
+      Command="{Binding AbgeschlagenheitNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Gewichtsverlust -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Gewichtsverlust?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding GewichtsverlustYesButtonColor}"
+      Command="{Binding GewichtsverlustYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding GewichtsverlustNoButtonColor}"
+      Command="{Binding GewichtsverlustNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
 
             <Button
                Command="{Binding GoToFinalPageCommand}"

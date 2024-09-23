@@ -50,7 +50,30 @@ namespace SmarteAnamnese
         private bool nachtschweiss;
 
         [ObservableProperty]
+        private bool durchfall;
+
+        [ObservableProperty]
         private bool fieber;
+
+        [ObservableProperty]
+        private string fieberHoehe;
+
+        [ObservableProperty]
+        private string weitereVeraenderungen;
+
+        [ObservableProperty]
+        private bool kopfschmerzen;
+
+        [ObservableProperty]
+        private bool muedigkeit;
+
+        [ObservableProperty]
+        private bool abgeschlagenheit;
+
+        [ObservableProperty]
+        private bool gewichtsverlust;
+
+
 
 
 
@@ -101,6 +124,36 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color fieberNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color durchfallYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color durchfallNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color kopfschmerzenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color kopfschmerzenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color muedigkeitYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color muedigkeitNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color abgeschlagenheitYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color abgeschlagenheitNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color gewichtsverlustYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color gewichtsverlustNoButtonColor = Colors.LightGray;
 
 
 
@@ -232,6 +285,86 @@ namespace SmarteAnamnese
             FieberNoButtonColor = Colors.Green;
         }
 
+        [RelayCommand]
+        public void DurchfallYes()
+        {
+            Durchfall = true;
+            DurchfallYesButtonColor = Colors.Green;
+            DurchfallNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void DurchfallNo()
+        {
+            Durchfall = false;
+            DurchfallYesButtonColor = Colors.LightGray;
+            DurchfallNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void KopfschmerzenYes()
+        {
+            Kopfschmerzen = true;
+            KopfschmerzenYesButtonColor = Colors.Green;
+            KopfschmerzenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void KopfschmerzenNo()
+        {
+            Kopfschmerzen = false;
+            KopfschmerzenYesButtonColor = Colors.LightGray;
+            KopfschmerzenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void MuedigkeitYes()
+        {
+            Muedigkeit = true;
+            MuedigkeitYesButtonColor = Colors.Green;
+            MuedigkeitNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void MuedigkeitNo()
+        {
+            Muedigkeit = false;
+            MuedigkeitYesButtonColor = Colors.LightGray;
+            MuedigkeitNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void AbgeschlagenheitYes()
+        {
+            Abgeschlagenheit = true;
+            AbgeschlagenheitYesButtonColor = Colors.Green;
+            AbgeschlagenheitNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AbgeschlagenheitNo()
+        {
+            Abgeschlagenheit = false;
+            AbgeschlagenheitYesButtonColor = Colors.LightGray;
+            AbgeschlagenheitNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void GewichtsverlustYes()
+        {
+            Gewichtsverlust = true;
+            GewichtsverlustYesButtonColor = Colors.Green;
+            GewichtsverlustNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GewichtsverlustNo()
+        {
+            Gewichtsverlust = false;
+            GewichtsverlustYesButtonColor = Colors.LightGray;
+            GewichtsverlustNoButtonColor = Colors.Green;
+        }
+
 
         [RelayCommand]
         public async Task GoToFinalPage()
@@ -246,7 +379,14 @@ namespace SmarteAnamnese
             magendarm.Verstopfung = Verstopfung;
             magendarm.Bauchkraempfe = Bauchkraempfe;
             magendarm.Nachtschweiss = Nachtschweiss;
+            magendarm.Durchfall = Durchfall;
             magendarm.Fieber = Fieber;
+            magendarm.FieberHoehe = FieberHoehe;
+            magendarm.WeitereVeraenderungen = WeitereVeraenderungen;
+            magendarm.Kopfschmerzen = Kopfschmerzen;
+            magendarm.Muedigkeit = Muedigkeit;
+            magendarm.Abgeschlagenheit = Abgeschlagenheit;
+            magendarm.Gewichtsverlust = Gewichtsverlust;
             // MagenDarm als Anmnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
