@@ -92,6 +92,39 @@
                  VerticalOptions="Center" 
                  HorizontalOptions="Center" />
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                  Text="Andere Vorerkrankungen?" 
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Center" />
+                <Entry 
+                  Text="{Binding VorerkrankungenGenerell}" 
+                  Placeholder="Geben Sie hier Ihre Antwort ein"
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+                 Text="Blähungen?" 
+                 VerticalOptions="Center" 
+                 HorizontalOptions="Center" />
+
+                <Button 
+                 Text="Ja"
+                 BackgroundColor="{Binding BlaehungenYesButtonColor}"
+                 Command="{Binding BlaehungenYesCommand}"
+                 WidthRequest="65"
+                 Margin="5"/>
+
+                <Button 
+                 Text="Nein"
+                 BackgroundColor="{Binding BlaehungenNoButtonColor}"
+                 Command="{Binding BlaehungenNoCommand}"
+                 WidthRequest="65"
+                 Margin="5"/>
+
+
+            </StackLayout>
             <Button
                Command="{Binding GoToFinalPageCommand}"
                Text="Speichern"

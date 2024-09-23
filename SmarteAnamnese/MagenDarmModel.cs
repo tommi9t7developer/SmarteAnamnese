@@ -17,5 +17,17 @@ namespace SmarteAnamnese
         public bool OperationMagenDarm { get; set; }
 
         public string Tumor { get; set; } = string.Empty; // Standardwert
+
+        public string VorerkrankungenGenerell { get; set; } = string.Empty; // Standardwert
+
+        public bool Blaehungen { get; set; }
+
+        public bool Verstopfung { get; set; }
+
+        public bool Bauchkraempfe { get; set; }
+
+        public bool Nachtschweiss { get; set; }
+
+        public bool Fieber { get; set; }
     }
 }
