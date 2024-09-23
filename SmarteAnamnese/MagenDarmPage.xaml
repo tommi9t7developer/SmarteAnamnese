@@ -125,6 +125,86 @@
 
 
             </StackLayout>
+            <!-- Verstopfung -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Verstopfung?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding VerstopfungYesButtonColor}"
+      Command="{Binding VerstopfungYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding VerstopfungNoButtonColor}"
+      Command="{Binding VerstopfungNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Bauchkraempfe -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Bauchkrämpfe?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding BauchkraempfeYesButtonColor}"
+      Command="{Binding BauchkraempfeYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding BauchkraempfeNoButtonColor}"
+      Command="{Binding BauchkraempfeNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Nachtschweiss -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Nachtschweiß?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding NachtschweissYesButtonColor}"
+      Command="{Binding NachtschweissYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding NachtschweissNoButtonColor}"
+      Command="{Binding NachtschweissNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Fieber -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Fieber?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding FieberYesButtonColor}"
+      Command="{Binding FieberYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding FieberNoButtonColor}"
+      Command="{Binding FieberNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
             <Button
                Command="{Binding GoToFinalPageCommand}"
                Text="Speichern"

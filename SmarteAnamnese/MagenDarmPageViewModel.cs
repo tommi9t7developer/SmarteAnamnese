@@ -40,6 +40,18 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool blaehungen;
 
+        [ObservableProperty]
+        private bool verstopfung;
+
+        [ObservableProperty]
+        private bool bauchkraempfe;
+
+        [ObservableProperty]
+        private bool nachtschweiss;
+
+        [ObservableProperty]
+        private bool fieber;
+
 
 
         [ObservableProperty]
@@ -65,6 +77,30 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color blaehungenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color verstopfungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color verstopfungNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color bauchkraempfeYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color bauchkraempfeNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color nachtschweissYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color nachtschweissNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color fieberYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color fieberNoButtonColor = Colors.LightGray;
 
 
 
@@ -133,6 +169,71 @@ namespace SmarteAnamnese
         }
 
         [RelayCommand]
+        public void VerstopfungYes()
+        {
+            Verstopfung = true;
+            VerstopfungYesButtonColor = Colors.Green;
+            VerstopfungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void VerstopfungNo()
+        {
+            Verstopfung = false;
+            VerstopfungYesButtonColor = Colors.LightGray;
+            VerstopfungNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void BauchkraempfeYes()
+        {
+            Bauchkraempfe = true;
+            BauchkraempfeYesButtonColor = Colors.Green;
+            BauchkraempfeNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void BauchkraempfeNo()
+        {
+            Bauchkraempfe = false;
+            BauchkraempfeYesButtonColor = Colors.LightGray;
+            BauchkraempfeNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void NachtschweissYes()
+        {
+            Nachtschweiss = true;
+            NachtschweissYesButtonColor = Colors.Green;
+            NachtschweissNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void NachtschweissNo()
+        {
+            Nachtschweiss = false;
+            NachtschweissYesButtonColor = Colors.LightGray;
+            NachtschweissNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void FieberYes()
+        {
+            Fieber = true;
+            FieberYesButtonColor = Colors.Green;
+            FieberNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void FieberNo()
+        {
+            Fieber = false;
+            FieberYesButtonColor = Colors.LightGray;
+            FieberNoButtonColor = Colors.Green;
+        }
+
+
+        [RelayCommand]
         public async Task GoToFinalPage()
         {
             magendarm.BeschwerdeZeitraum = BeschwerdeZeitraum;
@@ -141,6 +242,11 @@ namespace SmarteAnamnese
             magendarm.OperationMagenDarm = OperationMagenDarm;
             magendarm.Tumor = Tumor;
             magendarm.VorerkrankungenGenerell = VorerkrankungenGenerell;
+            magendarm.Blaehungen = Blaehungen;
+            magendarm.Verstopfung = Verstopfung;
+            magendarm.Bauchkraempfe = Bauchkraempfe;
+            magendarm.Nachtschweiss = Nachtschweiss;
+            magendarm.Fieber = Fieber;
             // MagenDarm als Anmnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
