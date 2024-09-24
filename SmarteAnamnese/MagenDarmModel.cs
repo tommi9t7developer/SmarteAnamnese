@@ -62,6 +62,16 @@ namespace SmarteAnamnese
 
         public bool StuhlKonsistenzSehrFest { get; set; }
 
+        public string ImAusland { get; set; } = string.Empty; // Standardwert
+
+        public string ChronischeFamilienDarmErkrankungen { get; set; } = string.Empty; // Standardwert
+
+        public bool AugenErkrankung { get; set; }
+
+        public bool HautVeraenderungen { get; set; }
+
+        public bool GelenkSchmerzen { get; set; }
+
 
     }
 }

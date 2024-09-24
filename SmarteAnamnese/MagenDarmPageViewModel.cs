@@ -106,6 +106,20 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool stuhlKonsistenzSehrFest = false;
 
+        [ObservableProperty]
+        private string imAusland;
+
+        [ObservableProperty]
+        private string chronischeFamilienDarmErkrankungen;
+
+        [ObservableProperty]
+        private bool augenErkrankung;
+
+        [ObservableProperty]
+        private bool hautVeraenderungen;
+
+        [ObservableProperty]
+        private bool gelenkSchmerzen;
 
 
 
@@ -209,6 +223,25 @@ namespace SmarteAnamnese
         private Color konsistenzFluessigButtonColor = Colors.LightGray;
         [ObservableProperty]
         private Color konsistenzSehrFestButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color augenErkrankungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color augenErkrankungNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hautVeraenderungenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color hautVeraenderungenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color gelenkSchmerzenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color gelenkSchmerzenNoButtonColor = Colors.LightGray;
+
 
 
 
@@ -507,6 +540,55 @@ namespace SmarteAnamnese
             KonsistenzSehrFestButtonColor = Colors.Green;
         }
 
+        [RelayCommand]
+        public void AugenErkrankungYes()
+        {
+            AugenErkrankung = true;
+            AugenErkrankungYesButtonColor = Colors.Green;
+            AugenErkrankungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AugenErkrankungNo()
+        {
+            AugenErkrankung = false;
+            AugenErkrankungYesButtonColor = Colors.LightGray;
+            AugenErkrankungNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void HautVeraenderungenYes()
+        {
+            HautVeraenderungen = true;
+            HautVeraenderungenYesButtonColor = Colors.Green;
+            HautVeraenderungenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void HautVeraenderungenNo()
+        {
+            HautVeraenderungen = false;
+            HautVeraenderungenYesButtonColor = Colors.LightGray;
+            HautVeraenderungenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void GelenkSchmerzenYes()
+        {
+            GelenkSchmerzen = true;
+            GelenkSchmerzenYesButtonColor = Colors.Green;
+            GelenkSchmerzenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GelenkSchmerzenNo()
+        {
+            GelenkSchmerzen = false;
+            GelenkSchmerzenYesButtonColor = Colors.LightGray;
+            GelenkSchmerzenNoButtonColor = Colors.Green;
+        }
+
+
 
         [RelayCommand]
         public async Task GoToFinalPage()
@@ -540,7 +622,12 @@ namespace SmarteAnamnese
             magendarm.StuhlKonsistenzBlutig = StuhlKonsistenzBlutig;
             magendarm.StuhlKonsistenzFluessig = StuhlKonsistenzFluessig;
             magendarm.StuhlKonsistenzSehrFest = StuhlKonsistenzSehrFest;
-            // MagenDarm als Anmnese setzen
+            magendarm.ImAusland = ImAusland;
+            magendarm.ChronischeFamilienDarmErkrankungen = ChronischeFamilienDarmErkrankungen;
+            magendarm.AugenErkrankung = AugenErkrankung;
+            magendarm.HautVeraenderungen = HautVeraenderungen;
+            magendarm.GelenkSchmerzen = GelenkSchmerzen;
+            // MagenDarm als Anamnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
             await Shell.Current.GoToAsync(nameof(FinalPage));

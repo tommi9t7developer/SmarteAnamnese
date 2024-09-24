@@ -424,6 +424,89 @@ Command="{Binding KonsistenzSehrFestYesCommand}"
 HorizontalOptions="FillAndExpand"
 Margin="5"/>
             </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Waren Sie vor kurzem im ausland, wenn ja wo?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Entry 
+      Text="{Binding ImAusland}" 
+      Placeholder="Geben Sie hier Ihre Antwort ein"
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Gibt es in Ihrer Familie chronische Magendarmerkrankungen, wenn ja welche?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding ChronischeFamilienDarmErkrankungen}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <!-- AugenErkrankung -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Haben Sie eine Augenerkrankung?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding AugenErkrankungYesButtonColor}"
+      Command="{Binding AugenErkrankungYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding AugenErkrankungNoButtonColor}"
+      Command="{Binding AugenErkrankungNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- HautVeraenderungen -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Haben Sie Hautveränderungen?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding HautVeraenderungenYesButtonColor}"
+      Command="{Binding HautVeraenderungenYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding HautVeraenderungenNoButtonColor}"
+      Command="{Binding HautVeraenderungenNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- GelenkSchmerzen -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Haben Sie Gelenkschmerzen?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding GelenkSchmerzenYesButtonColor}"
+      Command="{Binding GelenkSchmerzenYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding GelenkSchmerzenNoButtonColor}"
+      Command="{Binding GelenkSchmerzenNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
 
 
             <Button
