@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\magendarmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\magendarmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\finalpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\finalpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\magendarmpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\magendarmpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +19,8 @@
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\magendarmmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\magendarmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\magendarmpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\erkaeltungpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\finalpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|solutionrelative:smarteanamnese\\finalpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0C19EB6-3718-466A-9625-FCCBB4DD9E0E}|SmarteAnamnese\\SmarteAnamnese.csproj|c:\\users\\thomas\\source\\repos\\smarteanamnese\\smarteanamnese\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "FinalPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\FinalPageViewModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\FinalPageViewModel.cs",
@@ -74,50 +74,51 @@
               "RelativeToolTip": "SmarteAnamnese\\FinalPageViewModel.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAmwBoAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T15:30:45.494Z"
+              "WhenOpened": "2024-09-23T15:30:45.494Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MagenDarmPage.xaml",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmPage.xaml",
               "RelativeDocumentMoniker": "SmarteAnamnese\\MagenDarmPage.xaml",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmPage.xaml",
               "RelativeToolTip": "SmarteAnamnese\\MagenDarmPage.xaml",
-              "ViewState": "AQIAACUCAAAAAAAAAAAIwDMCAAAYAAAA",
+              "ViewState": "AQIAANYCAAAAAAAAAAAkwOgCAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-09-15T11:58:01.524Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MagenDarmPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmPageViewModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\MagenDarmPageViewModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmPageViewModel.cs",
               "RelativeToolTip": "SmarteAnamnese\\MagenDarmPageViewModel.cs",
-              "ViewState": "AQIAAHMCAAAAAAAAAAAAAIoCAAAsAAAA",
+              "ViewState": "AQIAAJcDAAAAAAAAAAAIwKwDAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-13T16:00:18.758Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MagenDarmModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\MagenDarmModel.cs",
               "ToolTip": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\MagenDarmModel.cs",
               "RelativeToolTip": "SmarteAnamnese\\MagenDarmModel.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAkwE4AAAAdAAAA",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAswGMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-11T04:27:37.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ErkaeltungPageViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Thomas\\source\\repos\\SmarteAnamnese\\SmarteAnamnese\\ErkaeltungPageViewModel.cs",
               "RelativeDocumentMoniker": "SmarteAnamnese\\ErkaeltungPageViewModel.cs",

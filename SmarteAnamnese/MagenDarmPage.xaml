@@ -567,6 +567,229 @@ VerticalOptions="Center"
 HorizontalOptions="Center" />
             </StackLayout>
 
+            <!-- GlutenFrei -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Ernähren Sie sich gerade glutenfrei?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding GlutenFreiYesButtonColor}"
+      Command="{Binding GlutenFreiYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding GlutenFreiNoButtonColor}"
+      Command="{Binding GlutenFreiNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- SpezielleKost -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Ernähren Sie sich gerade mit einer speziellen Kost?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding SpezielleKostYesButtonColor}"
+      Command="{Binding SpezielleKostYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding SpezielleKostNoButtonColor}"
+      Command="{Binding SpezielleKostNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- VorBefundeLaborErgebnisse -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Gibt es VorBefunde/LaborErgebnisse? (wenn ja bitte mitbringen)" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding VorBefundeLaborErgebnisseYesButtonColor}"
+      Command="{Binding VorBefundeLaborErgebnisseYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding VorBefundeLaborErgebnisseNoButtonColor}"
+      Command="{Binding VorBefundeLaborErgebnisseNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- BlutArmut -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="BlutArmut?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding BlutArmutYesButtonColor}"
+      Command="{Binding BlutArmutYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding BlutArmutNoButtonColor}"
+      Command="{Binding BlutArmutNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- ErhoehteLeberWerte -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Erhöhte Leberwerte?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding ErhoehteLeberWerteYesButtonColor}"
+      Command="{Binding ErhoehteLeberWerteYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding ErhoehteLeberWerteNoButtonColor}"
+      Command="{Binding ErhoehteLeberWerteNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Osteoporose -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Osteoporose?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding OsteoporoseYesButtonColor}"
+      Command="{Binding OsteoporoseYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding OsteoporoseNoButtonColor}"
+      Command="{Binding OsteoporoseNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- VitaminDMangel -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Vitamin-D-Mangel?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding VitaminDMangelYesButtonColor}"
+      Command="{Binding VitaminDMangelYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding VitaminDMangelNoButtonColor}"
+      Command="{Binding VitaminDMangelNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- VitaminB12Mangel -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Vitamin-B12-Mangel?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding VitaminB12MangelYesButtonColor}"
+      Command="{Binding VitaminB12MangelYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding VitaminB12MangelNoButtonColor}"
+      Command="{Binding VitaminB12MangelNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- SchildDrüsenErkrankung -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="SchilddrüsenErkrankung?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding SchildDruesenErkrankungYesButtonColor}"
+      Command="{Binding SchildDruesenErkrankungYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding SchildDruesenErkrankungNoButtonColor}"
+      Command="{Binding SchildDruesenErkrankungNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- Typ1Diabetes -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Typ-1-Diabetes?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding Typ1DiabetesYesButtonColor}"
+      Command="{Binding Typ1DiabetesYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding Typ1DiabetesNoButtonColor}"
+      Command="{Binding Typ1DiabetesNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- AndereImmunErkrankung -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Andere Immunerkrankung?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding AndereImmunErkrankungYesButtonColor}"
+      Command="{Binding AndereImmunErkrankungYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding AndereImmunErkrankungNoButtonColor}"
+      Command="{Binding AndereImmunErkrankungNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+
+
+
 
             <Button
                Command="{Binding GoToFinalPageCommand}"

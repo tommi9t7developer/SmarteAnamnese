@@ -136,6 +136,41 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private string allergien;
 
+        [ObservableProperty]
+        private bool glutenFrei;
+
+        [ObservableProperty]
+        private bool spezielleKost;
+
+        [ObservableProperty]
+        private bool vorBefundeLaborErgebnisse;
+
+        [ObservableProperty]
+        private bool blutArmut;
+
+        [ObservableProperty]
+        private bool erhoehteLeberWerte;
+
+        [ObservableProperty]
+        private bool osteoporose;
+
+        [ObservableProperty]
+        private bool vitaminDMangel;
+
+        [ObservableProperty]
+        private bool vitaminB12Mangel;
+
+        [ObservableProperty]
+        private bool schildDruesenErkrankung;
+
+        [ObservableProperty]
+        private bool typ1Diabetes;
+
+        [ObservableProperty]
+        private bool andereImmunErkrankung;
+
+
+
 
 
 
@@ -258,6 +293,73 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color gelenkSchmerzenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color glutenFreiYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color glutenFreiNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color spezielleKostYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color spezielleKostNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vorBefundeLaborErgebnisseYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vorBefundeLaborErgebnisseNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color blutArmutYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color blutArmutNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color erhoehteLeberWerteYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color erhoehteLeberWerteNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color osteoporoseYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color osteoporoseNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vitaminDMangelYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vitaminDMangelNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vitaminB12MangelYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color vitaminB12MangelNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color schildDruesenErkrankungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color schildDruesenErkrankungNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color typ1DiabetesYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color typ1DiabetesNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color andereImmunErkrankungYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color andereImmunErkrankungNoButtonColor = Colors.LightGray;
+
 
 
 
@@ -605,6 +707,183 @@ namespace SmarteAnamnese
             GelenkSchmerzenNoButtonColor = Colors.Green;
         }
 
+        [RelayCommand]
+        public void GlutenFreiYes()
+        {
+            GlutenFrei = true;
+            GlutenFreiYesButtonColor = Colors.Green;
+            GlutenFreiNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GlutenFreiNo()
+        {
+            GlutenFrei = false;
+            GlutenFreiYesButtonColor = Colors.LightGray;
+            GlutenFreiNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void SpezielleKostYes()
+        {
+            SpezielleKost = true;
+            SpezielleKostYesButtonColor = Colors.Green;
+            SpezielleKostNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void SpezielleKostNo()
+        {
+            SpezielleKost = false;
+            SpezielleKostYesButtonColor = Colors.LightGray;
+            SpezielleKostNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void VorBefundeLaborErgebnisseYes()
+        {
+            VorBefundeLaborErgebnisse = true;
+            VorBefundeLaborErgebnisseYesButtonColor = Colors.Green;
+            VorBefundeLaborErgebnisseNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void VorBefundeLaborErgebnisseNo()
+        {
+            VorBefundeLaborErgebnisse = false;
+            VorBefundeLaborErgebnisseYesButtonColor = Colors.LightGray;
+            VorBefundeLaborErgebnisseNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void BlutArmutYes()
+        {
+            BlutArmut = true;
+            BlutArmutYesButtonColor = Colors.Green;
+            BlutArmutNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void BlutArmutNo()
+        {
+            BlutArmut = false;
+            BlutArmutYesButtonColor = Colors.LightGray;
+            BlutArmutNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void ErhoehteLeberWerteYes()
+        {
+            ErhoehteLeberWerte = true;
+            ErhoehteLeberWerteYesButtonColor = Colors.Green;
+            ErhoehteLeberWerteNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void ErhoehteLeberWerteNo()
+        {
+            ErhoehteLeberWerte = false;
+            ErhoehteLeberWerteYesButtonColor = Colors.LightGray;
+            ErhoehteLeberWerteNoButtonColor = Colors.Green;
+        }
+
+
+        [RelayCommand]
+        public void OsteoporoseYes()
+        {
+            Osteoporose = true;
+            OsteoporoseYesButtonColor = Colors.Green;
+            OsteoporoseNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void OsteoporoseNo()
+        {
+            Osteoporose = false;
+            OsteoporoseYesButtonColor = Colors.LightGray;
+            OsteoporoseNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void VitaminDMangelYes()
+        {
+            VitaminDMangel = true;
+            VitaminDMangelYesButtonColor = Colors.Green;
+            VitaminDMangelNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void VitaminDMangelNo()
+        {
+            VitaminDMangel = false;
+            VitaminDMangelYesButtonColor = Colors.LightGray;
+            VitaminDMangelNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void VitaminB12MangelYes()
+        {
+            VitaminB12Mangel = true;
+            VitaminB12MangelYesButtonColor = Colors.Green;
+            VitaminB12MangelNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void VitaminB12MangelNo()
+        {
+            VitaminB12Mangel = false;
+            VitaminB12MangelYesButtonColor = Colors.LightGray;
+            VitaminB12MangelNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void SchildDrüsenErkrankungYes()
+        {
+            SchildDruesenErkrankung = true;
+            SchildDruesenErkrankungYesButtonColor = Colors.Green;
+            SchildDruesenErkrankungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void SchildDrüsenErkrankungNo()
+        {
+            SchildDruesenErkrankung = false;
+            SchildDruesenErkrankungYesButtonColor = Colors.LightGray;
+            SchildDruesenErkrankungNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void Typ1DiabetesYes()
+        {
+            Typ1Diabetes = true;
+            Typ1DiabetesYesButtonColor = Colors.Green;
+            Typ1DiabetesNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void Typ1DiabetesNo()
+        {
+            Typ1Diabetes = false;
+            Typ1DiabetesYesButtonColor = Colors.LightGray;
+            Typ1DiabetesNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void AndereImmunErkrankungYes()
+        {
+            AndereImmunErkrankung = true;
+            AndereImmunErkrankungYesButtonColor = Colors.Green;
+            AndereImmunErkrankungNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void AndereImmunErkrankungNo()
+        {
+            AndereImmunErkrankung = false;
+            AndereImmunErkrankungYesButtonColor = Colors.LightGray;
+            AndereImmunErkrankungNoButtonColor = Colors.Green;
+        }
+
 
 
         [RelayCommand]
@@ -649,6 +928,17 @@ namespace SmarteAnamnese
             magendarm.FruchtZuckerBeschwerdeZeit = FruchtZuckerBeschwerdeZeit;
             magendarm.HistamineBeschwerdeZeit = HistamineBeschwerdeZeit;
             magendarm.Allergien = Allergien;
+            magendarm.GlutenFrei = GlutenFrei; 
+            magendarm.SpezielleKost = SpezielleKost;
+            magendarm.VorBefundeLaborErgebnisse = VorBefundeLaborErgebnisse;
+            magendarm.BlutArmut = BlutArmut;
+            magendarm.ErhoehteLeberWerte = ErhoehteLeberWerte;
+            magendarm.Osteoporose = Osteoporose;
+            magendarm.VitaminDMangel = VitaminDMangel;
+            magendarm.VitaminB12Mangel = VitaminB12Mangel;
+            magendarm.SchildDruesenErkrankung = SchildDruesenErkrankung;
+            magendarm.Typ1Diabetes = Typ1Diabetes;
+            magendarm.AndereImmunErkrankung = AndereImmunErkrankung;
             // MagenDarm als Anamnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage

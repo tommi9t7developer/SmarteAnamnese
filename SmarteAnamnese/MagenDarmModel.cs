@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,6 +83,21 @@ namespace SmarteAnamnese
 
         public string Allergien { get; set; } = string.Empty; // Standardwert
 
+        public bool GlutenFrei { get; set; }
+
+        public bool SpezielleKost { get; set; }
+
+        public bool VorBefundeLaborErgebnisse { get; set; }
+
+        public bool BlutArmut { get; set; }
+        public bool ErhoehteLeberWerte { get; set; }
+        public bool Osteoporose { get; set; }
+        public bool VitaminDMangel { get; set; }
+        public bool VitaminB12Mangel { get; set; }
+        public bool SchildDruesenErkrankung { get; set; }
+        public bool Typ1Diabetes { get; set; }
+    
+        public bool AndereImmunErkrankung { get; set; }
 
     }
 }
