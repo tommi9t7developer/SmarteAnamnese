@@ -121,6 +121,23 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool gelenkSchmerzen;
 
+        [ObservableProperty]
+        private string getreideBeschwerdeZeit;
+
+        [ObservableProperty]
+        private string milchBeschwerdeZeit;
+
+        [ObservableProperty]
+        private string fruchtZuckerBeschwerdeZeit;
+
+        [ObservableProperty]
+        private string histamineBeschwerdeZeit;
+
+        [ObservableProperty]
+        private string allergien;
+
+
+
 
 
 
@@ -627,6 +644,11 @@ namespace SmarteAnamnese
             magendarm.AugenErkrankung = AugenErkrankung;
             magendarm.HautVeraenderungen = HautVeraenderungen;
             magendarm.GelenkSchmerzen = GelenkSchmerzen;
+            magendarm.GetreideBeschwerdeZeit = GetreideBeschwerdeZeit;
+            magendarm.MilchBeschwerdeZeit = MilchBeschwerdeZeit;
+            magendarm.FruchtZuckerBeschwerdeZeit = FruchtZuckerBeschwerdeZeit;
+            magendarm.HistamineBeschwerdeZeit = HistamineBeschwerdeZeit;
+            magendarm.Allergien = Allergien;
             // MagenDarm als Anamnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage

@@ -72,6 +72,16 @@ namespace SmarteAnamnese
 
         public bool GelenkSchmerzen { get; set; }
 
+        public string GetreideBeschwerdeZeit { get; set; } = string.Empty; // Standardwert
+
+        public string MilchBeschwerdeZeit { get; set; } = string.Empty; // Standardwert
+
+        public string FruchtZuckerBeschwerdeZeit { get; set; } = string.Empty; // Standardwert
+
+        public string HistamineBeschwerdeZeit { get; set; } = string.Empty; // Standardwert
+
+        public string Allergien { get; set; } = string.Empty; // Standardwert
+
 
     }
 }

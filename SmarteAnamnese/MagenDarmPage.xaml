@@ -507,6 +507,65 @@ HorizontalOptions="Center" />
       Margin="5"/>
             </StackLayout>
 
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Reagieren Sie mit Beschwerden auf Weizen/Roggen/Getreide, wenn ja seit wann?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding GetreideBeschwerdeZeit}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Reagieren Sie mit Beschwerden auf Milchprodukte (zB. Käse, Joghurt), wenn ja seit wann?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding MilchBeschwerdeZeit}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Reagieren Sie mit Beschwerden auf Fruchtzucker (zB. Obst), wenn ja seit wann?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding FruchtZuckerBeschwerdeBeschwerdeZeit}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Reagieren Sie mit Beschwerden auf Histamine (zB. Soja), wenn ja seit wann?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding HistamineBeschwerdeBeschwerdeZeit}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Haben Sie Allergien?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding Allergien}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
 
 
             <Button
