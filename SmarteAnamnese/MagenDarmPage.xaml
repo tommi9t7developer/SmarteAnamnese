@@ -770,22 +770,120 @@ HorizontalOptions="Center" />
             <!-- AndereImmunErkrankung -->
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
                 <Label 
-      Text="Andere Immunerkrankung?" 
+Text="Haben Sie eine andere Immunerkrankung, wenn ja welche?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding andereImmunErkrankung}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Nehmen sie Medikamente ein (auch frei verkäufliche), wenn ja welche?" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding medikamente}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Wieviel alkoholhaltige Getränke trinken sie pro Woche" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Entry 
+Text="{Binding alkoholhaltigeGetraenke}" 
+Placeholder="Geben Sie hier Ihre Antwort ein"
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+            </StackLayout>
+
+            <!-- AlkoholProblem -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Gab es in der Vergangenheit Probleme mit übermäßigem Alkoholgenuss?" 
       VerticalOptions="Center" 
       HorizontalOptions="Center" />
                 <Button 
       Text="Ja"
-      BackgroundColor="{Binding AndereImmunErkrankungYesButtonColor}"
-      Command="{Binding AndereImmunErkrankungYesCommand}"
+      BackgroundColor="{Binding AlkoholProblemYesButtonColor}"
+      Command="{Binding AlkoholProblemYesCommand}"
       WidthRequest="65"
       Margin="5"/>
                 <Button 
       Text="Nein"
-      BackgroundColor="{Binding AndereImmunErkrankungNoButtonColor}"
-      Command="{Binding AndereImmunErkrankungNoCommand}"
+      BackgroundColor="{Binding AlkoholProblemNoButtonColor}"
+      Command="{Binding AlkoholProblemNoCommand}"
       WidthRequest="65"
       Margin="5"/>
             </StackLayout>
+
+            <!-- GefaessErkrankungen -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Gefäßerkrankungen?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding GefaessErkrankungenYesButtonColor}"
+      Command="{Binding GefaessErkrankungenYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding GefaessErkrankungenNoButtonColor}"
+      Command="{Binding GefaessErkrankungenNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- CoronareHerzKrankheit -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Coronare Herzkrankheit?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding CoronareHerzKrankheitYesButtonColor}"
+      Command="{Binding CoronareHerzKrankheitYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding CoronareHerzKrankheitNoButtonColor}"
+      Command="{Binding CoronareHerzKrankheitNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
+            <!-- DurchBlutungsStoerungenBeine -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+      Text="Durchblutungsstörungen Beine?" 
+      VerticalOptions="Center" 
+      HorizontalOptions="Center" />
+                <Button 
+      Text="Ja"
+      BackgroundColor="{Binding DurchBlutungsStoerungenBeineYesButtonColor}"
+      Command="{Binding DurchBlutungsStoerungenBeineYesCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+                <Button 
+      Text="Nein"
+      BackgroundColor="{Binding DurchBlutungsStoerungenBeineNoButtonColor}"
+      Command="{Binding DurchBlutungsStoerungenBeineNoCommand}"
+      WidthRequest="65"
+      Margin="5"/>
+            </StackLayout>
+
 
 
 

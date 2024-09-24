@@ -97,7 +97,19 @@ namespace SmarteAnamnese
         public bool SchildDruesenErkrankung { get; set; }
         public bool Typ1Diabetes { get; set; }
     
-        public bool AndereImmunErkrankung { get; set; }
+        public string AndereImmunErkrankung { get; set; } = string.Empty; // Standardwert
+
+        public string Medikamente { get; set; } = string.Empty; // Standardwert
+
+        public string AlkoholhaltigeGetraenke { get; set; } = string.Empty; // Standardwert
+
+        public bool AlkoholProblem { get; set; }
+
+        public bool GefaessErkrankungen { get; set; }
+
+        public bool CoronareHerzKrankheit { get; set; }
+
+        public bool DurchBlutungsStoerungenBeine { get; set; }
 
     }
 }

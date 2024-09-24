@@ -167,8 +167,25 @@ namespace SmarteAnamnese
         private bool typ1Diabetes;
 
         [ObservableProperty]
-        private bool andereImmunErkrankung;
+        private string andereImmunErkrankung;
 
+        [ObservableProperty]
+        private string medikamente;
+
+        [ObservableProperty]
+        private string alkoholhaltigeGetraenke;
+
+        [ObservableProperty]
+        private bool alkoholProblem;
+
+        [ObservableProperty]
+        private bool gefaessErkrankungen;
+
+        [ObservableProperty]
+        private bool coronareHerzKrankheit;
+
+        [ObservableProperty]
+        private bool durchBlutungsStoerungenBeine;
 
 
 
@@ -355,11 +372,28 @@ namespace SmarteAnamnese
         private Color typ1DiabetesNoButtonColor = Colors.LightGray;
 
         [ObservableProperty]
-        private Color andereImmunErkrankungYesButtonColor = Colors.LightGray;
+        private Color alkoholProblemYesButtonColor = Colors.LightGray;
 
         [ObservableProperty]
-        private Color andereImmunErkrankungNoButtonColor = Colors.LightGray;
+        private Color alkoholProblemNoButtonColor = Colors.LightGray;
 
+        [ObservableProperty]
+        private Color gefaessErkrankungenYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color gefaessErkrankungenNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color coronareHerzKrankheitYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color coronareHerzKrankheitNoButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color durchBlutungsStoerungenBeineYesButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color durchBlutungsStoerungenBeineNoButtonColor = Colors.LightGray;
 
 
 
@@ -869,20 +903,70 @@ namespace SmarteAnamnese
         }
 
         [RelayCommand]
-        public void AndereImmunErkrankungYes()
+        public void AlkoholProblemYes()
         {
-            AndereImmunErkrankung = true;
-            AndereImmunErkrankungYesButtonColor = Colors.Green;
-            AndereImmunErkrankungNoButtonColor = Colors.LightGray;
+            AlkoholProblem = true;
+            AlkoholProblemYesButtonColor = Colors.Green;
+            AlkoholProblemNoButtonColor = Colors.LightGray;
         }
 
         [RelayCommand]
-        public void AndereImmunErkrankungNo()
+        public void AlkoholProblemNo()
         {
-            AndereImmunErkrankung = false;
-            AndereImmunErkrankungYesButtonColor = Colors.LightGray;
-            AndereImmunErkrankungNoButtonColor = Colors.Green;
+            AlkoholProblem = false;
+            AlkoholProblemYesButtonColor = Colors.LightGray;
+            AlkoholProblemNoButtonColor = Colors.Green;
         }
+
+        [RelayCommand]
+        public void GefaessErkrankungenYes()
+        {
+            GefaessErkrankungen = true;
+            GefaessErkrankungenYesButtonColor = Colors.Green;
+            GefaessErkrankungenNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void GefaessErkrankungenNo()
+        {
+            GefaessErkrankungen = false;
+            GefaessErkrankungenYesButtonColor = Colors.LightGray;
+            GefaessErkrankungenNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void CoronareHerzKrankheitYes()
+        {
+            CoronareHerzKrankheit = true;
+            CoronareHerzKrankheitYesButtonColor = Colors.Green;
+            CoronareHerzKrankheitNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void CoronareHerzKrankheitNo()
+        {
+            CoronareHerzKrankheit = false;
+            CoronareHerzKrankheitYesButtonColor = Colors.LightGray;
+            CoronareHerzKrankheitNoButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void DurchBlutungsStoerungenBeineYes()
+        {
+            DurchBlutungsStoerungenBeine = true;
+            DurchBlutungsStoerungenBeineYesButtonColor = Colors.Green;
+            DurchBlutungsStoerungenBeineNoButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void DurchBlutungsStoerungenBeineNo()
+        {
+            DurchBlutungsStoerungenBeine = false;
+            DurchBlutungsStoerungenBeineYesButtonColor = Colors.LightGray;
+            DurchBlutungsStoerungenBeineNoButtonColor = Colors.Green;
+        }
+
+
 
 
 
@@ -939,6 +1023,12 @@ namespace SmarteAnamnese
             magendarm.SchildDruesenErkrankung = SchildDruesenErkrankung;
             magendarm.Typ1Diabetes = Typ1Diabetes;
             magendarm.AndereImmunErkrankung = AndereImmunErkrankung;
+            magendarm.Medikamente = Medikamente;
+            magendarm.AlkoholhaltigeGetraenke = AlkoholhaltigeGetraenke;
+            magendarm.AlkoholProblem = AlkoholProblem;
+            magendarm.GefaessErkrankungen = GefaessErkrankungen;
+            magendarm.CoronareHerzKrankheit = CoronareHerzKrankheit;
+            magendarm.DurchBlutungsStoerungenBeine = DurchBlutungsStoerungenBeine;
             // MagenDarm als Anamnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
