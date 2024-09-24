@@ -50,6 +50,18 @@ namespace SmarteAnamnese
 
         public string Groesse { get; set; } = string.Empty; // Standardwert
 
+        public bool StuhlGangTaeglich { get; set; }
+        public bool StuhlGangAllePaarTage { get; set; }
+        public bool StuhlGangWoechentlich { get; set; }
+
+
+        public bool StuhlKonsistenzNormal { get; set; }
+        public bool StuhlKonsistenzSchleimig { get; set; }
+        public bool StuhlKonsistenzBlutig { get; set; }
+        public bool StuhlKonsistenzFluessig { get; set; }
+
+        public bool StuhlKonsistenzSehrFest { get; set; }
+
 
     }
 }

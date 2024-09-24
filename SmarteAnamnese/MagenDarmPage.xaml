@@ -372,19 +372,56 @@ HorizontalOptions="Center" />
 Text="Täglich"
 BackgroundColor="{Binding StuhlGangTaeglichButtonColor}"
 Command="{Binding StuhlGangTaeglichYesCommand}"
-WidthRequest="65"
+HorizontalOptions="FillAndExpand"
 Margin="5"/>
                 <Button 
 Text="Alle Paar Tage"
 BackgroundColor="{Binding StuhlGangAllePaarTageButtonColor}"
 Command="{Binding StuhlGangAllePaarTageYesCommand}"
-WidthRequest="65"
+HorizontalOptions="FillAndExpand"
 Margin="5"/>
                 <Button 
 Text="Wöchentlich"
 BackgroundColor="{Binding StuhlGangWoechentlichButtonColor}"
 Command="{Binding StuhlGangWoechentlichYesCommand}"
-WidthRequest="65"
+HorizontalOptions="FillAndExpand"
+Margin="5"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label 
+Text="Konsistenz? (Normal setzt alles zurück)" 
+VerticalOptions="Center" 
+HorizontalOptions="Center" />
+                <Button 
+Text="Normal"
+BackgroundColor="{Binding KonsistenzNormalButtonColor}"
+Command="{Binding KonsistenzNormalYesCommand}"
+HorizontalOptions="FillAndExpand"
+Margin="5"/>
+                <Button 
+Text="Schleimig"
+BackgroundColor="{Binding KonsistenzSchleimigButtonColor}"
+Command="{Binding KonsistenzSchleimigYesCommand}"
+HorizontalOptions="FillAndExpand"
+Margin="5"/>
+                <Button 
+Text="Blutig"
+BackgroundColor="{Binding KonsistenzBlutigButtonColor}"
+Command="{Binding KonsistenzBlutigYesCommand}"
+HorizontalOptions="FillAndExpand"
+Margin="5"/>
+                <Button 
+Text="Flüssig"
+BackgroundColor="{Binding KonsistenzFluessigButtonColor}"
+Command="{Binding KonsistenzFluessigYesCommand}"
+HorizontalOptions="FillAndExpand"
+Margin="5"/>
+                <Button 
+Text="Sehr fest"
+BackgroundColor="{Binding KonsistenzSehrFestButtonColor}"
+Command="{Binding KonsistenzSehrFestYesCommand}"
+HorizontalOptions="FillAndExpand"
 Margin="5"/>
             </StackLayout>
 

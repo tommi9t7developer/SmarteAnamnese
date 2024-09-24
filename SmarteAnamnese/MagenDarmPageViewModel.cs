@@ -91,7 +91,22 @@ namespace SmarteAnamnese
         [ObservableProperty]
         private bool stuhlGangWoechentlich = false;
 
-        
+        [ObservableProperty]
+        private bool stuhlKonsistenzNormal = false;
+
+        [ObservableProperty]
+        private bool stuhlKonsistenzSchleimig = false;
+
+        [ObservableProperty]
+        private bool stuhlKonsistenzBlutig = false;
+
+        [ObservableProperty]
+        private bool stuhlKonsistenzFluessig = false;
+
+        [ObservableProperty]
+        private bool stuhlKonsistenzSehrFest = false;
+
+
 
 
 
@@ -183,6 +198,17 @@ namespace SmarteAnamnese
 
         [ObservableProperty]
         private Color stuhlGangWoechentlichButtonColor = Colors.LightGray;
+
+        [ObservableProperty]
+        private Color konsistenzNormalButtonColor = Colors.LightGray;
+        [ObservableProperty]
+        private Color konsistenzSchleimigButtonColor = Colors.LightGray;
+        [ObservableProperty]
+        private Color konsistenzBlutigButtonColor = Colors.LightGray;
+        [ObservableProperty]
+        private Color konsistenzFluessigButtonColor = Colors.LightGray;
+        [ObservableProperty]
+        private Color konsistenzSehrFestButtonColor = Colors.LightGray;
 
 
 
@@ -430,6 +456,57 @@ namespace SmarteAnamnese
 
         }
 
+        [RelayCommand]
+        public void KonsistenzNormalYes()
+        {
+           StuhlKonsistenzNormal = true;
+           StuhlKonsistenzSchleimig = false;
+           StuhlKonsistenzBlutig = false;
+           StuhlKonsistenzFluessig = false;
+           StuhlKonsistenzSehrFest = false;
+           KonsistenzNormalButtonColor = Colors.Green;
+           KonsistenzSchleimigButtonColor = Colors.LightGray;
+           KonsistenzBlutigButtonColor = Colors.LightGray;
+           KonsistenzFluessigButtonColor = Colors.LightGray;
+           KonsistenzSehrFestButtonColor = Colors.LightGray;
+        }
+
+        [RelayCommand]
+        public void KonsistenzSchleimigYes()
+        {
+            StuhlKonsistenzNormal = false;
+            StuhlKonsistenzSchleimig = true;
+            KonsistenzNormalButtonColor = Colors.LightGray;
+            KonsistenzSchleimigButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void KonsistenzBlutigYes()
+        {
+            StuhlKonsistenzNormal = false;
+            StuhlKonsistenzBlutig = true;
+            KonsistenzNormalButtonColor = Colors.LightGray;
+            KonsistenzBlutigButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void KonsistenzFluessigYes()
+        {
+            StuhlKonsistenzNormal = false;
+            StuhlKonsistenzFluessig = true;
+            KonsistenzNormalButtonColor = Colors.LightGray;
+            KonsistenzFluessigButtonColor = Colors.Green;
+        }
+
+        [RelayCommand]
+        public void KonsistenzSehrFestYes()
+        {
+            StuhlKonsistenzNormal = false;
+            StuhlKonsistenzSehrFest = true;
+            KonsistenzNormalButtonColor = Colors.LightGray;
+            KonsistenzSehrFestButtonColor = Colors.Green;
+        }
+
 
         [RelayCommand]
         public async Task GoToFinalPage()
@@ -455,6 +532,14 @@ namespace SmarteAnamnese
             magendarm.GewichtVerloren = GewichtVerloren;
             magendarm.Gewicht = Gewicht;
             magendarm.Groesse = Groesse;
+            magendarm.StuhlGangTaeglich = StuhlGangTaeglich;
+            magendarm.StuhlGangAllePaarTage = StuhlGangAllePaarTage;
+            magendarm.StuhlGangWoechentlich = StuhlGangWoechentlich;
+            magendarm.StuhlKonsistenzNormal = StuhlKonsistenzNormal;
+            magendarm.StuhlKonsistenzSchleimig = StuhlKonsistenzSchleimig;
+            magendarm.StuhlKonsistenzBlutig = StuhlKonsistenzBlutig;
+            magendarm.StuhlKonsistenzFluessig = StuhlKonsistenzFluessig;
+            magendarm.StuhlKonsistenzSehrFest = StuhlKonsistenzSehrFest;
             // MagenDarm als Anmnese setzen
             _dataService.Patient.Anamnese = magendarm;
             // Navigiere zur ErkältungsAnamnesePage
